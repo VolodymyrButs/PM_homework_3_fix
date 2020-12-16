@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --mobile: 320px;
+  --tabletSmall: 750px;
+  --tabletBig: 970px;
+  --desktop: 1140px;
+  --indent: 15px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: var(--mobile);
+  max-width: var(--desktop);
+  min-height: 100vh;
+}
+
+.block {
+  padding: 0 var(--indent);
+  width: 100%;
+}
+@media screen and (min-width: 1140px) {
+  .block {
+    padding: 0;
+  }
+}
