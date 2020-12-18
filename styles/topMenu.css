@@ -36,7 +36,7 @@
   color: #bdc3c5;
   text-decoration: none;
 }
-.withArrov::after {
+.withArrow::after {
   content: "▾";
   margin-left: 5px;
   color: #ff5816;
