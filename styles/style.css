@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto-light", sans-serif;
   --mobile: 320px;
   --tabletSmall: 750px;
   --tabletBig: 970px;
@@ -12,6 +13,8 @@
 body {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .container {
