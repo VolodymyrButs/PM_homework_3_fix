@@ -7,6 +7,8 @@
 }
 .topMenu {
   height: 40px;
+  min-width: var(--mobile);
+  max-width: var(--desktop);
   position: relative;
   background-color: #040d0d;
   color: #bdc3c5;

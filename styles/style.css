@@ -21,9 +21,9 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 0 var(--indent);
   min-width: var(--mobile);
   max-width: var(--desktop);
-  min-height: 100vh;
 }
 
 .block {
@@ -32,6 +32,9 @@ body {
 }
 @media screen and (min-width: 1140px) {
   .block {
+    padding: 0;
+  }
+  .container {
     padding: 0;
   }
 }
