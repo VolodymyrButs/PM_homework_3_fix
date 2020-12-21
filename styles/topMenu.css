@@ -20,7 +20,7 @@
   justify-content: space-evenly;
   position: absolute;
   top: 0;
-  left: -100vw;
+  left: -120vw;
   width: 100vw;
   height: 100vh;
   min-height: 420px;
@@ -35,6 +35,7 @@
 #menu li a {
   color: #bdc3c5;
   text-decoration: none;
+  cursor: pointer;
 }
 .withArrow::after {
   content: "▾";

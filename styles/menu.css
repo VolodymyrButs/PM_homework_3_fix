@@ -1,0 +1,48 @@
+.menuWrapper {
+  position: relative;
+  display: none;
+  list-style: none;
+  height: 44px;
+  max-width: 100%;
+  background-color: #d94206;
+  border-radius: 5px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.menuWrapper li {
+  font-size: 13px;
+  background-color: #ff5816;
+  line-height: 16px;
+  padding: 6px 5px;
+  height: 44px;
+  text-transform: uppercase;
+  color: #fff;
+  flex-shrink: 0;
+  border-right: 1px solid #bdc3c5;
+  cursor: pointer;
+}
+
+.menuWrapper li:hover {
+  background-color: #ff743d;
+  text-decoration: underline;
+}
+
+.menuWrapper a {
+  position: absolute;
+  right: 1px;
+  color: #fff;
+  top: 4px;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.menuWrapper a:hover {
+  color: #879296;
+}
+
+@media screen and (min-width: 1140px) {
+  .menuWrapper {
+    display: flex;
+  }
+}
