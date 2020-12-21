@@ -4,7 +4,6 @@
   list-style: none;
   height: 44px;
   max-width: 100%;
-  margin: var(--indent) 0;
   background-color: #d94206;
   border-radius: 5px;
   overflow: hidden;
