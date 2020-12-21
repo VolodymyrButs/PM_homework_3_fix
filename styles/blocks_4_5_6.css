@@ -1,0 +1,206 @@
+.bannerWrapper {
+  display: none;
+}
+
+/*////////////////////////*/
+@media screen and (min-width: 750px) {
+  .bannerWrapper {
+    display: flex;
+  }
+
+  #banner_comment {
+    background-color: #e3e5eb;
+    border-radius: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 10.5pt;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 15px;
+    margin-bottom: 32px;
+    width: 100%;
+    height: 60px;
+  }
+
+  #banner {
+    position: relative;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire bannerContainer */
+    background-image: url("../img/banner_bg.png");
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: white;
+  }
+
+  .bannerContainer {
+    flex-grow: 5;
+    align-items: flex-start;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .bannerContainer > div {
+    margin-bottom: 30px;
+  }
+  #banner h1,
+  #banner h2,
+  #banner h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+
+  #banner h1 {
+    font-weight: 400;
+    color: #ff5816;
+  }
+
+  .bannerContainer h2 {
+    font-weight: 200;
+  }
+
+  .bannerContainer h3 {
+    font-weight: 200;
+    font-style: italic;
+  }
+
+  .bannerContainer > ul {
+    padding-left: 10px;
+    font-size: 15px;
+    margin: auto 0;
+  }
+
+  .bannerContainer > ul > li {
+    margin: 10px;
+  }
+
+  .arrow {
+    height: 60px;
+    width: 25px;
+    margin: auto 20px;
+    cursor: pointer;
+  }
+
+  .arrow:hover {
+    height: 70px;
+  }
+
+  .bannerContainer > button {
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #4673ab;
+    border: 0;
+    font-size: 20px;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-weight: 500;
+    margin-top: 30px;
+    display: block;
+    border-bottom: 4px solid #c4c4c4;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .bannerContainer > button:hover {
+    background-color: rgb(230, 230, 230);
+  }
+
+  .pager_navigation {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+  }
+
+  .pager_navigation > span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #c4c4c4;
+    border-radius: 5px;
+  }
+
+  .pager_navigation > span.active {
+    background-color: #ff5816;
+  }
+
+  .leftBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 300px;
+    margin: 10px 20px 10px 0;
+  }
+
+  .leftBanner > p {
+    text-transform: uppercase;
+    font-size: 22px;
+  }
+
+  .lineNews {
+    margin: 10px 0 20px 0;
+    border-top: 1px solid #c4c4c4;
+  }
+
+  .news {
+    display: flex;
+    padding: var(--indent) 0;
+    border-bottom: 1px dotted #c4c4c4;
+  }
+
+  .imgWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 65px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  .news img {
+    width: 65px;
+    height: 65px;
+    border-radius: 5px;
+  }
+  .imgWrapper .date {
+    position: absolute;
+    left: 20px;
+    bottom: -10px;
+    padding: 3px 5px;
+    border-radius: 4px;
+    color: #ff5816;
+    background-color: #fff;
+  }
+  .imgWrapper .month {
+    position: absolute;
+    left: 0px;
+    bottom: -20px;
+    font-size: 11px;
+    width: 65px;
+    text-align: center;
+  }
+  .newsName {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 3px;
+  }
+  .newsDesc {
+    font-size: 13px;
+  }
+  .rightBanner {
+    flex-grow: 1;
+  }
+}
+@media screen and (min-width: 1080px) {
+  #banner_comment {
+    height: 45px;
+  }
+}

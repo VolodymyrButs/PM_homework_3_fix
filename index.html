@@ -7,69 +7,309 @@
     <link rel="stylesheet" href="./styles/topMenu.css" />
     <link rel="stylesheet" href="./styles/menu.css" />
     <link rel="stylesheet" href="./styles/goods.css" />
+    <link rel="stylesheet" href="./styles/block2.css" />
+    <link rel="stylesheet" href="./styles/blocks_4_5_6.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="topMenuWrapper">
-        <div class="topMenu block">
-          <a href="#menu">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="15"
-              viewBox="0 0 32 15"
-            >
-              <path
-                fill="#ff6837"
-                fill-rule="evenodd"
-                id="меню"
-                class="cls-1"
-                d="M338,13h30a1,1,0,0,1,1,1v1a1,1,0,0,1-1,1H338a1,1,0,0,1-1-1V14A1,1,0,0,1,338,13Zm0,6h30a1,1,0,0,1,1,1v1a1,1,0,0,1-1,1H338a1,1,0,0,1-1-1V20A1,1,0,0,1,338,19Zm0,6h30a1,1,0,0,1,1,1v1a1,1,0,0,1-1,1H338a1,1,0,0,1-1-1V26A1,1,0,0,1,338,25Z"
-                transform="translate(-337 -13)"
-              />
-            </svg>
-            <span>Меню</span>
-          </a>
+      <div class="topMenu block">
+        <a href="#menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="15"
+            viewBox="0 0 32 15"
+          >
+            <path
+              fill="#ff6837"
+              fill-rule="evenodd"
+              id="меню"
+              class="cls-1"
+              d="M338,13h30a1,1,0,0,1,1,1v1a1,1,0,0,1-1,1H338a1,1,0,0,1-1-1V14A1,1,0,0,1,338,13Zm0,6h30a1,1,0,0,1,1,1v1a1,1,0,0,1-1,1H338a1,1,0,0,1-1-1V20A1,1,0,0,1,338,19Zm0,6h30a1,1,0,0,1,1,1v1a1,1,0,0,1-1,1H338a1,1,0,0,1-1-1V26A1,1,0,0,1,338,25Z"
+              transform="translate(-337 -13)"
+            />
+          </svg>
+          <span>Меню</span>
+        </a>
 
-          <menu id="menu">
-            <li><a href="#" class="withArrow">Каталог</a></li>
-            <li><a href="#" class="withArrow">О компании</a></li>
-            <li><a href="#">Оплата и доставка</a></li>
-            <li><a href="#">Гарантии и возврат</a></li>
-            <li><a href="#">Сотрудничество</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Решения</a></li>
-            <li><a href="#">Техподдержка</a></li>
-            <li><a href="#">Контакти</a></li>
-            <button><a href="#">x</a></button>
-          </menu>
-        </div>
-    
+        <menu id="menu">
+          <li><a href="#" class="withArrow">Каталог</a></li>
+          <li><a href="#" class="withArrow">О компании</a></li>
+          <li><a href="#">Оплата и доставка</a></li>
+          <li><a href="#">Гарантии и возврат</a></li>
+          <li><a href="#">Сотрудничество</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Решения</a></li>
+          <li><a href="#">Техподдержка</a></li>
+          <li><a href="#">Контакти</a></li>
+          <button><a href="#">x</a></button>
+        </menu>
+      </div>
     </div>
     <section class="container">
+      <div id="block2">
+        <div class="location">
+          <div class="region">Ваш регион:</div>
+          <div class="city">Москва</div>
+        </div>
+
+        <div class="personal">
+          <a href="#" class="login">Войти</a>
+          <a href="#" class="account">Личный кабинет</a>
+        </div>
+
+        <div class="logo">
+          <div>
+            <p class="txt1">HO</p>
+            <p class="logo_center"></p>
+            <p class="txt2">RU</p>
+          </div>
+          <p class="logo_slogan">Оборудование и решения для VOIP</p>
+        </div>
+
+        <div class="recall">
+          <a href="#" class="recall_txt">Обратный</a>
+          <a href="#" class="recall_txt">Звонок</a>
+        </div>
+
+        <div class="icons">
+          <a href="#" class="icon1"
+            ><img src="./img/icon1.png" alt="Search"
+          /></a>
+          <button class="btn_cart">
+            <a href="#" class="icon2"
+              ><img src="./img/icon2.png" alt="Cart"
+            /></a>
+            <div class="cart_info">
+              <p class="cart">Корзина</p>
+              <p class="sum">10 / 10 000р.</p>
+            </div>
+          </button>
+        </div>
+
+        <div class="btn_options">
+          <a href="#">
+            <img
+              style="vertical-align: middle"
+              src="./img/heart.png"
+              height="17px"
+            />
+            <span>Избранные</span>
+            <span>7</span>
+          </a>
+          <a href="#">
+            <img
+              style="vertical-align: middle"
+              src="./img/btn_options_arrow.png"
+              height="23px"
+            />
+            <span>Сравнения</span>
+            <span>2</span>
+          </a>
+        </div>
+
+        <div class="contacts">
+          <a href="tel:#" class="phone">+7 495 2-55-44-66</a>
+          <div class="social">
+            <img src="./img/viber.jpg" alt="Viber" />
+            <img src="./img/wtsapp.jpg" alt="Whatsapp" />
+            <a href="tel:#">+7 911 111-11-11</a>
+          </div>
+          <p class="schedule">(пн-пт с 9 до 18 ч)</p>
+          <a href="#" class="email">info@homy.ru</a>
+          <div class="skype">
+            <img src="./img/skype.png" alt="Skype" />
+            <p>skype-on.06</p>
+          </div>
+        </div>
+
+        <div class="search">
+          <div class="search_txt">
+            <img src="./img/coin.png" />
+            <div>
+              <span class="search_txt1">void решения</span>
+              <br />
+              <span class="search_txt2">для экономных людей</span>
+            </div>
+          </div>
+          <form>
+            <input class="search_bar" placeholder="Поиск по сайту" />
+            <button class="search_go">искать</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="container">
       <menu class="menuWrapper">
-        <li>VOIP</br> оборудование</li>
-        <li>SKYPE</br> оборудование</li>
-        <li>GSM </br>оборудование</li>
-        <li>видео- </br>оборудование</li>
-        <li>радио dest</br> телефоны</li>
+        <li>
+          VOIP <br />
+          оборудование
+        </li>
+        <li>
+          SKYPE<br />
+          оборудование
+        </li>
+        <li>GSM <br />оборудование</li>
+        <li>видео- <br />оборудование</li>
+        <li>
+          радио dest<br />
+          телефоны
+        </li>
         <li>гарнитуры</li>
-        <li>електронные</br> замки</li>
-        <li>домофонные </br>системы</li>
-        <li>системы записи </br>телефонных разговоров</li>
-        <li>сетевое</br> оборудование</li>
-        <li>что-то </br>другое</li>
+        <li>
+          електронные<br />
+          замки
+        </li>
+        <li>домофонные <br />системы</li>
+        <li>системы записи <br />телефонных разговоров</li>
+        <li>
+          сетевое<br />
+          оборудование
+        </li>
+        <li>что-то <br />другое</li>
         <a href="#">›</a>
       </menu>
     </section>
     <section class="container">
-      <div class="goodsWrapper">
-        <div class="goodsHeader">Новинки <span>❯</span><div class="line"></div><button class="navArrow">❮</button><button class="navArrow"> ❯</button></div>
-        <div class="goodWrapper"><img src="./assets/11.png" alt='Phone image'/>
-        <a class="goodName">Phone</a>
-        <div class="priceBlock">Price: <span class="newPrice">10000 p.</span><span class="oldPrice">12000 p.</span></div>
+      <div class="bannerWrapper">
+        <div class="leftBanner">
+          <p>Новости компании</p>
+          <div class="lineNews"></div>
+          <div class="news">
+            <div class="imgWrapper">
+              <p class="date">22</p>
+              <p class="month">октября</p>
+              <img src="./img/GRP_b2b_large.jpg" />
+            </div>
+            <div>
+              <a href="#" class="newsName"
+                >Новые телефоны Grandstream серии GRP2600</a
+              >
+              <p class="newsDesc">
+                Grandstream серии GRP2600 - это современные IP-телефоны
+                операторского класса, которые были созданы для быстрого
+                массового развёртывания.
+              </p>
+            </div>
+          </div>
+          <div class="news">
+            <div class="imgWrapper">
+              <img src="./img/untitled.png" />
+              <p class="date">09</p>
+              <p class="month">september</p>
+            </div>
+            <div>
+              <a href="#" class="newsName"
+                >Новая прошивка для IP-телефонов Fanvil X5S/X6</a
+              >
+              <p class="newsDesc">
+                Новая прошивка для IP-телефонов Fanvil X5S/X6
+              </p>
+            </div>
+          </div>
+          <div class="news">
+            <div class="imgWrapper">
+              <p class="date">30</p>
+              <p class="month">ноября</p>
+              <img src="./img/sankt-petersburg-3012671_960_720.jpg" />
+            </div>
+            <div>
+              <a href="#" class="newsName"
+                >У нас открыт склад и пункт выдачи в Санкт Петербурге</a
+              >
+              <p class="newsDesc">
+                Открытие точки выдачи товаров в северной столице
+              </p>
+            </div>
+          </div>
+          <a href="#">Все новости</a>
+        </div>
+        <div class="rightBanner">
+          <div id="banner_comment">
+            <span class="black_comment"
+              ><b>Более 2000 товаров</b> от 40+ производителей в одном магазине
+              <span style="color: #4673ab; font-weight: bold"
+                >любые решения под ключ</span
+              ></span
+            >
+          </div>
+
+          <div id="banner">
+            <img src="./img/banner_arrow1.png" class="arrow" />
+            <div class="bannerContainer">
+              <div>
+                <h1>Революционное решение</h1>
+                <h2>На рынке среди систем вкс!</h2>
+                <h3>GVC 3200 от компании grandstream это:</h3>
+              </div>
+              <ul>
+                <li>
+                  9-ти сторонняя аудио/видео конференция без покупки
+                  дополнительного ПО
+                </li>
+                <li>2 Мпикс камера CMOS с разрешением 1920x1080V@15fps</li>
+                <li>
+                  Гигабитный порт, встроенный модуль WiFi (802.11n) и Bluetooth
+                  4.0 Miracast
+                </li>
+              </ul>
+              <button>Подробнее</button>
+            </div>
+            <img src="./img/banner_arrow2.png" class="arrow" />
+            <div class="pager_navigation">
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
       </div>
-      </menu>
+    </section>
+    <section class="container">
+      <div class="goodsHeader">
+        Новинки <span>❯</span>
+        <div class="line"></div>
+        <button class="navArrow">❮</button><button class="navArrow">❯</button>
+      </div>
+      <div class="goodsWrapper">
+        <img src="./img/banner_arrow1.png" class="arrowNews" />
+        <div class="goodWrapper">
+          <img src="./img/11.png" alt="Phone image" />
+          <a class="goodName">Phone</a>
+          <div class="priceBlock">
+            Price: <span class="newPrice">10000 p.</span
+            ><span class="oldPrice">12000 p.</span>
+          </div>
+        </div>
+        <div class="goodWrapper">
+          <img src="./img/11.png" alt="Phone image" />
+          <a class="goodName">Phone</a>
+          <div class="priceBlock">
+            Price: <span class="newPrice">10000 p.</span
+            ><span class="oldPrice">12000 p.</span>
+          </div>
+        </div>
+        <div class="goodWrapper">
+          <img src="./img/11.png" alt="Phone image" />
+          <a class="goodName">Phone</a>
+          <div class="priceBlock">
+            Price: <span class="newPrice">10000 p.</span
+            ><span class="oldPrice">12000 p.</span>
+          </div>
+        </div>
+        <div class="goodWrapper">
+          <img src="./img/11.png" alt="Phone image" />
+          <a class="goodName">Phone</a>
+          <div class="priceBlock">
+            Price: <span class="newPrice">10000 p.</span
+            ><span class="oldPrice">12000 p.</span>
+          </div>
+        </div>
+        <img src="./img/banner_arrow2.png" class="arrowNews" />
+      </div>
     </section>
   </body>
 </html>
