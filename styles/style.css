@@ -27,6 +27,7 @@ body {
   padding: 0 var(--indent);
   width: 100%;
 }
+
 @media screen and (min-width: 1140px) {
   .block {
     padding: 0;
