@@ -23,7 +23,6 @@ body {
   width: 100%;
   min-width: var(--mobile);
   max-width: var(--desktop);
-  min-height: 100vh;
 }
 
 .block {
