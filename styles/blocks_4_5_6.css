@@ -1,11 +1,10 @@
 .bannerWrapper {
-  visibility: hidden;
+  display: none;
 }
 
 /*////////////////////////*/
 @media screen and (min-width: 750px) {
   .bannerWrapper {
-    visibility: visible;
     display: flex;
   }
 
@@ -182,9 +181,11 @@
   }
   .imgWrapper .month {
     position: absolute;
-    left: 8px;
+    left: 0px;
     bottom: -20px;
     font-size: 11px;
+    width: 65px;
+    text-align: center;
   }
   .newsName {
     font-size: 13px;
