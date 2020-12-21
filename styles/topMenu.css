@@ -35,6 +35,7 @@
 #menu li a {
   color: #bdc3c5;
   text-decoration: none;
+  cursor: pointer;
 }
 .withArrow::after {
   content: "▾";
