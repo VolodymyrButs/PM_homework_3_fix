@@ -82,7 +82,7 @@
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  background-image: url("/img/bg.png");
+  background-image: url("../img/bg.png");
   border-radius: 10px;
 }
 
