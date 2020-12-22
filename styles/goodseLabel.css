@@ -1,0 +1,78 @@
+.goodWrapper.new::before {
+  position: absolute;
+  content: "NEW";
+  background: #42c16c;
+  z-index: 5;
+  width: 36px;
+  height: 35px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px 5px 10px 010px;
+  line-height: 34px;
+  text-align: center;
+  top: -5px;
+  left: 15px;
+}
+.goodWrapper.new::after {
+  position: absolute;
+  content: "";
+  background: #42c16c;
+  z-index: 4;
+  width: 20px;
+  transform: rotate(45deg);
+  height: 20px;
+  top: 18px;
+  left: 23px;
+}
+.goodWrapper.sale::before {
+  position: absolute;
+  content: "%";
+  background: rgb(26, 140, 179);
+  z-index: 5;
+  width: 36px;
+  height: 35px;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 5px 5px 10px 010px;
+  line-height: 34px;
+  text-align: center;
+  top: -5px;
+  left: 15px;
+}
+.goodWrapper.sale::after {
+  position: absolute;
+  content: "";
+  background: rgb(26, 140, 179);
+  z-index: 4;
+  width: 20px;
+  transform: rotate(45deg);
+  height: 20px;
+  top: 18px;
+  left: 23px;
+}
+.goodWrapper.up::before {
+  position: absolute;
+  content: "👍";
+  background: rgb(122, 4, 122);
+  z-index: 5;
+  width: 36px;
+  height: 35px;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 5px 5px 10px 010px;
+  line-height: 34px;
+  text-align: center;
+  top: -5px;
+  left: 15px;
+}
+.goodWrapper.up::after {
+  position: absolute;
+  content: "";
+  background: rgb(122, 4, 122);
+  z-index: 4;
+  width: 20px;
+  transform: rotate(45deg);
+  height: 20px;
+  top: 18px;
+  left: 23px;
+}
