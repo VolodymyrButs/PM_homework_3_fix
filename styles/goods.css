@@ -8,12 +8,16 @@
   padding-top: 5px;
   max-height: 385px;
 }
+
 .goodsHeader {
   display: flex;
   align-items: center;
   font-size: 22px;
   font-weight: bold;
   margin: var(--indent) 0;
+}
+.goodsHeader.now {
+  display: none;
 }
 .goodsHeader span {
   font-size: 22px;
@@ -150,5 +154,10 @@
   }
   .goodsHeader a {
     display: block;
+  }
+}
+@media screen and (min-width: 750px) {
+  .goodsHeader.now {
+    display: flex;
   }
 }
