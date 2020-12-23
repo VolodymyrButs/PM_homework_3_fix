@@ -20,6 +20,11 @@
   color: lightblue;
   margin-left: 10px;
 }
+.goodsHeader a {
+  display: none;
+  font-size: 14px;
+  font-weight: normal;
+}
 .line {
   height: 1px;
   margin: 0 10px;
@@ -50,7 +55,7 @@
   display: flex;
   position: relative;
   height: 380px;
-  width: 240px;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   border: 1px solid #bdc3c5;
@@ -73,6 +78,7 @@
   overflow: hidden;
   color: rgb(26, 140, 179);
   margin-bottom: 5px;
+  cursor: pointer;
 }
 .goodName:hover {
   color: #ff743d;
@@ -125,8 +131,24 @@
   color: rgb(26, 140, 179);
   font-size: 15px;
 }
+
+@media screen and (min-width: 412px) {
+  .goodWrapper {
+    width: 240px;
+  }
+}
+
 @media screen and (min-width: 1140px) {
   .arrowNews {
+    display: block;
+  }
+  .goodsHeader > span {
+    display: none;
+  }
+  .navArrow {
+    display: none;
+  }
+  .goodsHeader a {
     display: block;
   }
 }
