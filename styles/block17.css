@@ -1,0 +1,25 @@
+.company_info {
+    display: none;
+}
+
+@media screen and (min-width: 750px) {
+    .company_info {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 15px;
+        margin-top: 30px;
+        font-size: 11pt;
+        font-weight: 200;
+        color: #040d0d;
+    }
+
+    .company_info > p {
+        width: 47vw;
+    }
+
+    .company_info  a {
+        text-decoration: underline solid #ff5816;
+        color: #ff5816;
+    }
+}
