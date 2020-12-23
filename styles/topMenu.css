@@ -5,6 +5,7 @@
   background-color: #040d0d;
   display: flex;
   justify-content: center;
+  z-index: 10;
 }
 .topMenu {
   height: 40px;

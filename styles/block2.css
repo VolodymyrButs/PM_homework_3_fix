@@ -78,7 +78,6 @@
   font-weight: bolder;
   color: #ff5816;
   padding: 0 3px;
-  background-size: cover;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -133,7 +132,6 @@
   grid-area: phone;
   font-size: 13pt;
   font-weight: 500;
-  text-decoration: none;
   color: #040d0d;
 }
 
@@ -152,6 +150,10 @@
   flex-direction: row;
   justify-self: start;
 }
+.social > a {
+  text-decoration: none;
+  color: #040d0d;
+}
 
 .skype {
   grid-area: skype;
@@ -160,6 +162,7 @@
   flex-wrap: nowrap;
   flex-direction: row;
   justify-self: end;
+  color: #040d0d;
   font-weight: 500;
 }
 
@@ -260,6 +263,7 @@
   .schedule {
     display: block;
     order: 2;
+    color: #040d0d;
   }
 
   .social,
@@ -330,6 +334,7 @@
   .sum {
     display: block;
     padding-left: 10px;
+    margin-top: 8px;
     line-height: 5px;
   }
 
@@ -452,6 +457,7 @@
     font-weight: 200;
     border: none;
     border-radius: 5px;
+    outline: none;
   }
 
   .search_go {
