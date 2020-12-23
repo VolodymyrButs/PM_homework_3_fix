@@ -27,27 +27,26 @@
   display: none;
 }
 
-.logo > .footer_address,
+#footer .logo > .footer_address,
 .footer_options,
 #footer > .contacts {
   font-size: 10pt;
 }
 
-.logo > .details {
+#footer .logo > .details {
   display: block;
   margin-top: 20px;
   font-size: 8pt;
 }
 
-.logo {
+#footer .logo {
   grid-area: logo;
   display: flex;
   flex-direction: column;
   justify-content: right;
-  font-size: 8pt;
 }
 
-.logo > div {
+#footer .logo > div {
   font-size: 20pt;
 }
 
