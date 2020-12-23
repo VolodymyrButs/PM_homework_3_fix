@@ -155,31 +155,28 @@
   color: #040d0d;
 }
 
-.social > img {
-  margin: 0;
-  height: 1.4rem;
-}
-
-.social > p {
-  margin: 0;
-}
-
 .skype {
   grid-area: skype;
   display: flex;
+  width: 105px;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-self: end;
   color: #040d0d;
   font-weight: 500;
 }
 
-.skype > img {
-  margin: 0;
-  height: 1.4rem;
+.skype > img,
+.social > img {
+  margin-right: 3px;
+  height: 20px;
 }
 
-.skype > p {
+.skype > p,
+.social > a {
   margin: 0;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .logo_slogan,
