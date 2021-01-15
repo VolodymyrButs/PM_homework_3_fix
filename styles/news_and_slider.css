@@ -82,7 +82,12 @@
     margin: 10px;
   }
 
+  .arrow {
+    margin: 10px;
+  }
+
   .arrow:hover {
+    width: 16px;
     height: 70px;
   }
 
