@@ -35,15 +35,28 @@
 #menu li {
   display: flex;
   justify-content: center;
+
+  font-size: 13px;
+}
+#menu li:hover {
+  border-bottom: 3px solid #ff5816;
+  border-top: 3px solid transparent;
+}
+.sep {
+  width: 0px;
+  height: 15px;
+  border-left: 1px solid #323232;
 }
 #menu li a {
   color: #bdc3c5;
   text-decoration: none;
   cursor: pointer;
+  padding: 9px 5px;
 }
 .withArrow::after {
-  content: "▾";
-  margin-left: 5px;
+  content: "\25BC";
+  font-size: 13px;
+  margin-left: 10px;
   color: #ff5816;
 }
 #menu button {

@@ -1,0 +1,103 @@
+.reasonsWrapper {
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .reasonsWrapper {
+    display: block;
+    border-radius: 10px;
+  }
+
+  .reasonsHeader {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: var(--indent) 0;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+
+  .reasons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .reasons > * {
+    width: 48%;
+    border: 2px solid;
+    border-radius: 10px;
+  }
+
+  .reasons > .negative {
+    border-color: #f6bdbf;
+  }
+
+  .reasons > .positive {
+    border-color: #9bd1a6;
+  }
+
+  .basisHeader {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    min-height: 95px;
+  }
+
+  .basisHeader > img {
+    height: 25px;
+    margin: auto 15px;
+  }
+
+  .basisHeader > h1 {
+    margin: auto 0;
+    font-size: 13pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  .negative,
+  .positive {
+    height: fit-content;
+  }
+  .negative > .basisHeader {
+    background-color: #cb0b13;
+  }
+
+  .positive > .basisHeader {
+    background-color: #16a333;
+  }
+
+  .reasons ul {
+    padding: 30px;
+  }
+
+  .reasons ul > li {
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style: none; /* Remove default bullets */
+  }
+
+  .negative ul li::before {
+    content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #cb0b13; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+  .positive ul li::before {
+    content: "\2022";
+    color: #16a333;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+}

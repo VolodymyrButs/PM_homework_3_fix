@@ -9,7 +9,7 @@
   font-weight: lighter;
 }
 
-.block18 {
+.footer_block {
   display: grid;
   grid-template-areas:
     "ul ul"
@@ -22,8 +22,7 @@
   width: 100%;
 }
 
-.footer_address,
-.footer_recall {
+.footer_address {
   display: none;
 }
 
@@ -69,65 +68,62 @@
   padding: 10px 15px;
   border-bottom: #fff 1px solid;
   text-decoration: none;
-  color: #c8d4dc;
 }
 
-.block18 > .contacts {
+.footer_block > .contacts {
   grid-area: contacts;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin-top: 20px;
-  color: #fff;
   font-weight: 100;
   font-size: smaller;
   line-height: 8px;
   white-space: nowrap;
 }
-.block18 .social > img {
+.footer_block .social > img {
   margin-right: 3px;
 }
-.block18 * {
-  color: #fff;
+.footer_block * {
+  color: #c8d4dc;
 }
 
-.block18 .phone {
-  color: #fff;
+.footer_block .phone {
   font-weight: 100;
   font-size: 11pt;
   text-align: right;
+  color: #c8d4dc;
 }
 
-.block18 .social > li {
+.footer_block .social > li {
   display: flex;
   flex-direction: row;
 }
 
-.block18 .social > a {
-  color: #fff;
+.footer_block .social > a {
   font-weight: 100;
   font-size: 9pt;
   text-align: right;
+  color: #c8d4dc;
 }
 
-.block18 .social > span {
-  color: #fff;
+.footer_block .social > span {
   font-size: 13pt;
   text-align: right;
 }
-.block18 .email {
-  color: #fff;
+.footer_block .email {
   font-size: 9pt;
+  color: #c8d4dc;
 }
 
-.block18 .skype {
+.footer_block .skype {
   display: flex;
   flex-direction: row;
   justify-self: right;
   font-size: 9pt;
 }
 @media screen and (min-width: 750px) {
-  .block18 {
+  .footer_block {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -153,30 +149,13 @@
   .footer_options > li {
     margin-bottom: 10px;
   }
-
-  .footer_recall {
-    display: block;
-    height: fit-content;
-    width: fit-content;
-    border: 2px solid #e3e5eb;
-    background-color: #fff;
-    border-radius: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 10px 0;
-    margin: 15px;
-    margin-top: var(--indent);
+  #footer .recall {
+    padding: 10px 30px 10px 15px;
   }
-
-  .footer_recall_txt {
+  #footer .recall_txt {
     color: #4673ab;
-    line-height: 20pt;
-    text-decoration: none;
-    border-bottom: 1px dotted #4673ab;
-    cursor: pointer;
   }
-
-  .contacts > a {
+  .footer_block .contacts > a {
     order: 5;
   }
 

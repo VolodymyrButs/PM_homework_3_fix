@@ -2,12 +2,15 @@
   position: relative;
   display: none;
   list-style: none;
+  justify-content: space-between;
   height: 44px;
   max-width: 100%;
-  background-color: #d94206;
+  background-color: #ff5816;
   border-radius: 5px;
+  padding: 0 12px;
   overflow: hidden;
   flex-wrap: wrap;
+  border-bottom: 2px solid #c44411;
 }
 
 .menuWrapper li {
@@ -19,8 +22,14 @@
   text-transform: uppercase;
   color: #fff;
   flex-shrink: 0;
-  border-right: 1px solid #bdc3c5;
   cursor: pointer;
+}
+
+.menuWrapper .separator {
+  height: 100%;
+  padding: 0;
+  width: 0;
+  border-right: 1px solid #ff743d;
 }
 
 .menuWrapper li:hover {
@@ -30,11 +39,16 @@
 
 .menuWrapper a {
   position: absolute;
-  right: 1px;
+  background-color: #c44411;
+  width: 12px;
+  height: 100%;
+  padding-left: 3px;
+  right: 0px;
   color: #fff;
-  top: 4px;
+  top: 0px;
   text-decoration: none;
   font-size: 28px;
+  vertical-align: middle;
 }
 
 .menuWrapper a:hover {
