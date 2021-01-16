@@ -77,6 +77,10 @@
   .purchase_path > img:nth-last-of-type(2) {
     display: block;
   }
+
+  .purchase_path {
+    flex-wrap: nowrap;
+  }
 }
 @media screen and (min-width: 980px) {
   .purchase_step {
