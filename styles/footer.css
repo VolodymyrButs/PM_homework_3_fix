@@ -74,6 +74,10 @@
   color: #fff;
 }
 
+.footer_recall {
+  display: none;
+}
+
 .footer > .contacts {
   grid-area: contacts;
   display: flex;
@@ -102,7 +106,7 @@
   font-weight: bold;
   font-size: 18px;
   text-align: right;
-  color: #c8d4dc;
+  color: #fff;
 }
 
 .footer .email {

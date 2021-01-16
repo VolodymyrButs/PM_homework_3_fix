@@ -51,6 +51,7 @@
   color: #ff743d;
   border-radius: 50%;
   font-size: 20px;
+  outline: none;
 }
 .navArrow:hover {
   border: 2px solid #ff743d;
