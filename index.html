@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="./styles/topMenu.css" />
     <link rel="stylesheet" href="./styles/menu.css" />
     <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/news_and_slider.css" />
+    <link rel="stylesheet" href="./styles/adds.css" />
     <link rel="stylesheet" href="./styles/brands.css" />
     <link rel="stylesheet" href="./styles/strength.css" />
-    <link rel="stylesheet" href="./styles/reasons.css" />
+    <link rel="stylesheet" href="./styles/companyReasons.css" />
     <link rel="stylesheet" href="./styles/numbers.css" />
     <link rel="stylesheet" href="./styles/cooperation.css" />
-    <link rel="stylesheet" href="./styles/company_info.css" />
+    <link rel="stylesheet" href="./styles/companyInfo.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/goodseLabel.css" />
+    <link rel="stylesheet" href="./styles/goodsLabel.css" />
     <link rel="stylesheet" href="./styles/promo.css" />
     <link rel="stylesheet" href="./styles/goods.css" />
     <link rel="stylesheet" href="./styles/writeNow.css" />
@@ -88,34 +88,18 @@
         </div>
 
         <div class="recall">
-          <a href="#" class="recall_txt">Обратный Звонок</a>
+          <a href="#" class="recall_txt">Обратный звонок</a>
+          <!--<a href="#" class="recall_txt">Звонок</a>-->
         </div>
 
         <div class="icons">
           <a href="#" class="icon1"
-            ><img src="./img/icon1.png" alt="Search"
+            ><img src="./img/header/icon1.png" alt="Search"
           /></a>
           <button class="btn_cart">
             <a href="#" class="icon2"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 495.4 495.4"
-                class="svg replaced-svg"
-              >
-                <path
-                  d="M185 381.5c-22.9 0-41.4 18.5-41.4 41.4 0 22.9 18.5 41.4 41.4 41.4 22.8 0 41.4-18.5 41.4-41.4C226.4 400 207.9 381.5 185 381.5z"
-                  class="a"
-                ></path>
-                <path
-                  d="M365.6 381.5c-22.9 0-41.4 18.5-41.4 41.4 0 22.9 18.5 41.4 41.4 41.4 22.8 0 41.4-18.5 41.4-41.4C407 400 388.5 381.5 365.6 381.5z"
-                  class="a"
-                ></path>
-                <path
-                  d="M469.6 154.7l-229.2 0c-11.5 0-20.7 9.3-20.7 20.8s9.3 20.8 20.8 20.8l202.8 0 -12.9 43.5 -206.2 0c-10.6 0-19.2 8.6-19.2 19.3 0 10.6 8.6 19.3 19.3 19.3l194.8 0.1 -12.1 40.7H174.5L159 196.2 144.3 76.5c-1.2-9.5-8.1-17.3-17.3-19.6l-98-25C16.6 28.7 3.9 36.2 0.7 48.6s4.3 25.1 16.8 28.3l82.7 21.1 32.2 241.6c0 0 1.1 28.2 26.7 28.2h256.8c21.5 0 25.7-22.4 25.7-22.4l50.9-151.2C492.4 194.2 507.5 154.7 469.6 154.7z"
-                  class="a"
-                ></path>
-              </svg>
-            </a>
+              ><img src="./img/header/icon2.png" alt="Cart"
+            /></a>
             <div class="cart_info">
               <p class="cart">Корзина</p>
               <p class="sum">10 / 10 000р.</p>
@@ -127,7 +111,7 @@
           <a href="#">
             <img
               style="vertical-align: middle"
-              src="./img/heart.png"
+              src="./img/header/heart.png"
               height="17px"
             />
             <span>Избранные</span>
@@ -136,7 +120,7 @@
           <a href="#">
             <img
               style="vertical-align: middle"
-              src="./img/btn_options_arrow.png"
+              src="./img/header/btn_options_arrow.png"
               height="23px"
             />
             <span>Сравнения</span>
@@ -147,46 +131,27 @@
         <div class="contacts">
           <a href="tel:#" class="phone">+7 495 2-55-44-66</a>
           <div class="social">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-            >
-              <image
-                width="16"
-                height="16"
-                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADYElEQVQ4jTVTW2hcVRRd55x7J5ObzNx5dJo20hQrxmk0ja2TlDZGTGkoJZR+GBQU4wsRRT+KnxXBL6Ug6EcRPwTRD3/8CT7Ij1VLfURSTU3rMKZpnDZNm8wj87hzn+ch94obDpvNPmutvffZhxQbJTSDFq5uF+EQh9R54z4GMl2TzamO7AwopdBDu9czLHsBUF8bJP53HN1yOLUfST0JDQAoKIQShiOdl8v+rbM2nBwFAyU0TKMjnOE7onrSIPG39ul739VJ7DwBsSKsTjToRItf99fOXbQWPtj0q7mAC0ARSCGjA0mgSQpHuOZl+8/3bvjlD3UaM0Ise+rM06Ror5z5rnHxrKmZmMxMRMoVrxapSwWEbQjIiJSBYVNUDqZYUsQQ+5Ede20qP1eZ/8yTfvz0zpN4Ze9z2KXvxKXtBbjSi0iUkpBQkY9iqbDmlEdzWuYretevPHnXr5opLYVHUiMAAR4yh5A3BuFxH4HkCKQAFyLygeBgiqLFLWPdu/OCtmwVT4RlhZcd4f83NG6j49ngUoIRAQIChYg78qExxVDqrE7SLbe+JwYdVa+OpcZylFxu/IUr7WuQikOEqpLDFwF8GYBLDi44pFRo+K0sDWRAwiDscW5jHov1JRzJFXAsN4FO4MIKbDjcgyd82IELO3AQKA4eEitB2PBLo880g1Z/jMRQ8WsoW+soZEYwvXsK7cBCsb2KtG7i1XufR39XH8rOBlzhRpUZ1LjFTr/+xP3XrJWjsXAfqI7Vzj9Ys27iQTOP6d3HcSC5H2PpQzix63EcyRYw0HUPLlV/w6ZXw8OJoTl6NF34IkF7Gg53IYRAr5bAD9Vf8ebSO5jfuIB8YhATucP439p+G023He6EnMyOf0pK1RX9/esff/J9/ednE1oifPRo3M2gjTiN40Aij8OZg+jv7sOWU8WXt79Byb6B2YGZj2b3zLyh3bQ39LrfTIWTtrkT/gAwytDDeuBJDz/VL2Oh/ge6aCxcZVjSxni68O2jmbG3FZSgNX9739VW6ZTJzK1+vW+BgrVbvgWXexFZr2aAUoqWsKExTU1lJ86PJkde5IpXpZLQkqzXOrXj+Iwt7d89GWw/lhobvNIuzt72Nsct0cmFrac0szZk9P0ynHjg8x16erHFO14IBoB/Af+zxgnR3eVsAAAAAElFTkSuQmCC"
-              />
-            </svg>
-
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              width="16"
-              height="18"
-              viewBox="0 0 16 18"
-            >
-              <image
-                width="16"
-                height="18"
-                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAADtUlEQVQ4jVVTW2wUZRg9/z/Xndndad3u0gttKVDoJS1YTTFVoEi0Bho1QHwxITEmmEjiA8/GFx70zRcf1RhD4gtGY4xAMFwSL7UpLJD0QgtL67bbZXfb3dnL7M7OzD/mHxKjXzIP/+Q7X853zvnIdraM3HoR1y7NRTv7YhO5te3Xy6XGmG01OzyXhQgBo5TUtKiajbRq92Kd0Rtri09/GzvWbw6M90AkBHBsd7hWanwxe3VpkjEfokQhihREoAAI7IYLq2IOFTbMV1cXnl7QIspd1/XOE4IZapXt1l+/S36ZSxcn9aiC3oEE5JCEhuUg0WXg5elhjL8xiK7+OERJABUIqkVrLHlj5Zt6tdkuHH/+9Jm7N5c/Mtp0nHjvJbx5bgL1mo2V5Dp8HxBlAVpExe7hdiiajMJ6CVSkKG9bbaqmpOjqQvYkAUHHrhjGpwYCwOTpgxg6tAulfBUgBCFdRmGzjO7+OLr37wCYD0GgeDKfmaJmvjrIQeVtC2a+Bl6SIiDebaBpuyhv1WDXHeiRECpFCz0DCUiKCEIJqmajn9p1x+CCFTIm/rqyGAx4eCeN2atLMGI6VuezSC/nUdqqolF3oEVVqBEVhBB4tqeLjDGJUArfdZG8vYxDJwYQjmpwHQbAh26oWFvMIpPKw2gLg7keKCUBA59vcnTwrQsAovxnuVSHXWvilbdHArXn/3wS0BdECp8B+Q0TZq4Kt+nB53bLYkE4fuDUB67jxfhE7vlmaiuwkQupRRQUc1W88Np+HDl1AKJAkV4pcF15K1RNTotGIrySeby1T5IFSBKFbTv45esZOLaDY++MYfTwHuhGCEpIQt9QO8ItGuauL/HwwYjra3TPSOeP/MFH+gBkRQLzfFz7dg6XPr0euMPBvCKtGhI9LUGf03Sxsz/+k3Du7Pm/rYp9dCtb2cmTxunxKHMBM6kCHs6lkUsXQQUaiHn7+/soZivo3peY7dob+4Q8+P0xamZj6Nble59tb1amJVUgPFiMMXiuj2fs/EAP/mYe8+PdLT9MTA99rEWURVFRZfi+v9CaCL8/+GLvuzNXFj5nzOPpK6pxNUmC0JGaKAuZUFi9byTCs1a5ntKjaoGLzXMASZEwdXY8b+ari7cuJ7Gj97mN3aMdHz56kPlDUUTIssRCUcXRI6oVNlTPKtc5k2dWSqoY7M1dqFtNQ9EU7B3tvOhT/Mw8xvhB+b4fNPNT599/S3Qdj6/I9+M2mCOH+y4eOXPwKw7hV5i8uQxZFv8H+rcA/AMz6K8ybxLLPgAAAABJRU5ErkJggg=="
-              />
-            </svg>
+            <a href="#" class="viber"
+              ><img src="./img/media/viber-2.png" alt="Viber"
+            /></a>
+            <a href="#" class="wtsapp"
+              ><img src="./img/media/wtsapp-2.png" alt="Whatsapp"
+            /></a>
             <a href="tel:#">+7 911 111-11-11</a>
           </div>
           <p class="schedule">(пн-пт с 9 до 18 ч)</p>
           <a href="#" class="email">info@homy.ru</a>
           <div class="skype">
-            <img src="./img/skype.png" alt="Skype" />
+            <a href="#" class="skype_icon"
+              ><img src="./img/media/skype.png" alt="Skype"
+            /></a>
             <p>skype-on.06</p>
           </div>
         </div>
 
         <div class="search">
           <div class="search_txt">
-            <img src="./img/coin.png" />
+            <img src="./img/header/coin.png" />
             <div>
               <span class="search_txt1">void решения</span>
               <br />
@@ -937,46 +902,21 @@
     </section>
     <section class="container">
       <div class="brands">
-        <div class="goodsHeader">
+        <div class="brandsHeader">
           Наши ключевые бренды <span>❯</span>
           <div class="line"></div>
           <a href="#">Все бренды</a>
-          <button class="navArrow">❮</button><button class="navArrow">❯</button>
         </div>
-        <div class="brandsWrapper">
-          <a href="#" target="blank">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 800 300"
-            width="100"
-            height="38"
-          >
-            <path
-              d="M 409.374,160.63 C 404.724,160.63 402.819,158.67 402.819,153.371 L 402.819,147.25 L 380.939,147.25 L 380.939,158.504 C 380.939,168.764 392.682,175.347 409.726,175.347 C 428.632,175.347 436.263,166.363 437.726,159.242 C 437.96,157.586 438.126,154.895 438.126,152.625 C 438.126,149.5 438.043,147.25 437.615,144.2 C 436.773,134.009 427.41,128.572 418.965,125.245 C 407.007,120.525 403.791,117.876 402.902,113.653 C 402.515,112.411 402.591,109.844 402.902,108.574 C 403.537,106.442 406.31,104.834 409.553,104.834 C 413.265,104.834 416.267,107.366 416.267,110.513 L 416.267,117.137 L 436.808,117.137 L 436.808,107.256 C 436.808,94.463 422.339,90.496 409.808,90.523 C 396.381,90.558 385.458,94.677 383.147,105.241 C 382.684,107.752 382.394,110.947 382.394,114.321 C 382.394,120.442 383.305,125.72 384.617,128.135 C 385.983,130.702 390.806,135.663 403.026,141.287 C 414.956,146.793 415.577,148.739 416.301,151.402 C 416.481,152.023 416.571,152.685 416.571,153.369 C 416.571,157.38 413.355,160.63 409.374,160.63 M 573.057,93.147 L 547.534,93.147 L 547.534,172.732 L 567.924,172.732 L 566.744,123.749 L 568.269,123.749 L 590.838,172.732 L 615.106,172.732 L 615.106,93.147 L 594.716,93.147 L 595.889,142.124 L 594.371,142.124 L 573.057,93.147 z M 520.389,154.613 L 520.389,93.147 L 497.191,93.147 L 497.191,155.192 C 497.191,158.035 494.528,160.346 491.312,160.346 C 488.097,160.346 485.426,158.034 485.426,155.192 L 485.426,93.147 L 462.221,93.147 L 462.221,154.613 C 462.221,166.115 475.29,175.355 491.312,175.355 C 507.32,175.355 520.389,166.116 520.389,154.613 z M 313.622,136.984 L 311.862,136.984 L 304.521,93.148 L 269.772,93.148 L 268.123,172.733 L 288.478,172.733 L 288.478,111.509 L 290.465,111.509 L 302.375,172.733 L 323.062,172.733 L 334.978,111.509 L 336.958,111.509 L 336.958,172.733 L 357.313,172.733 L 355.657,93.148 L 319.922,93.148 L 313.574,136.984 M 216.496,110.963 L 225.08,172.733 L 247.601,172.733 L 233.035,93.148 L 198.459,93.148 L 183.9,172.733 L 206.408,172.733 L 214.999,110.963 L 216.496,110.963 z M 379.869,19.993 C 600.499,-18.903 788.374,0.68 799.483,63.753 C 805.121,95.679 764.348,132.643 694.091,166.391 C 696.423,163.59 697.686,160.064 697.686,156.558 L 697.686,128.771 L 670.404,128.771 L 670.404,139.618 L 675.73,139.618 L 675.73,155.24 C 675.73,158.09 673.046,160.394 669.803,160.394 C 666.574,160.394 663.897,158.089 663.897,155.24 L 663.897,109.672 C 663.897,106.829 666.574,104.525 669.803,104.525 C 673.046,104.525 675.73,106.83 675.73,109.672 L 675.73,117.165 L 697.686,117.165 L 697.686,111.769 C 697.686,97.831 689.841,90.51 669.803,90.51 C 650.103,90.51 643.224,100.405 643.224,110.858 L 643.224,156.557 C 643.224,167.011 655.167,175.408 669.803,175.408 C 671.404,175.408 672.984,175.311 674.509,175.118 L 674.474,175.401 C 607.716,204.713 519.03,230.94 420.138,248.383 C 199.515,287.281 11.626,267.699 0.517,204.618 C -5.217,172.133 37.101,134.437 109.642,100.192 C 109.228,101.324 108.641,103.276 108.4,104.656 C 107.951,107.181 107.669,110.369 107.669,113.73 C 107.669,119.864 108.559,125.143 109.842,127.558 C 111.153,130.118 115.3,135.665 127.21,141.289 C 138.864,146.795 139.464,148.741 140.168,151.404 C 140.348,152.025 140.431,152.687 140.431,153.371 C 140.431,157.38 137.285,160.63 133.413,160.63 C 128.873,160.63 127.017,158.67 127.017,153.371 L 127.017,147.25 L 105.668,147.25 L 105.668,158.504 C 105.668,168.764 117.122,175.347 133.744,175.347 C 152.202,175.347 159.647,166.363 161.068,159.242 C 161.303,157.586 161.462,154.895 161.462,152.625 C 161.462,149.5 161.386,147.25 160.972,144.2 C 160.138,134.009 151.015,128.572 142.77,125.245 C 131.102,120.525 127.969,117.876 127.1,113.653 C 126.713,112.411 126.803,109.844 127.1,108.574 C 127.707,106.442 130.419,104.834 133.586,104.834 C 137.202,104.834 140.134,107.366 140.134,110.513 L 140.134,117.137 L 160.178,117.137 L 160.178,107.256 C 160.178,94.463 146.068,90.496 133.834,90.523 C 133.31,90.523 131.364,90.654 130.846,90.661 C 196.969,62.284 283.579,36.974 379.869,19.993"
-              style="fill: #1428a0; fill-opacity: 1"
-            />
-          </svg></a> 
-          <a href="#" target="blank"><img src="./img/panas.jpg" alt="Strength" /></a> 
-
-          <a href="#" target="blank"><img  src="./img/axis_logo_rgb6.jpg" alt="Strength" /></a> 
-
-
-          <a href="#" target="blank"><img  src="./img/axis_logo_rgb36.jpg" alt="Strength" />
-
-          <a href="#" target="blank"><img src="./img/axis_logo_rgb82.jpg" alt="Strength" />
-
-          <a href="#" target="blank"><img src="./img/axis_logo_rgb84.jpg" alt="Strength" /></a> 
-
-          <a href="#" target="blank"><img  src="./img/axis_logo_rgb844.jpg" alt="Strength" /></a> 
-
-          <a href="#" target="blank"><img  src="./img/dinstar24.jpg" alt="Strength" /></a> 
-
-          <a href="#" target="blank"><img  src="./img/ITS-Telecom-287x1554.png" alt="Strength" /></a> </a> 
-          <a href="#" target="blank"><img src="./img/nsgate_LOGO.jpg" alt="Strength" /></a> 
-
-          <a href="#" target="blank"><img  src="./img/openvoxlogo.jpg" alt="Strength" /></a> 
-
-          <a href="#" target="blank"><img src="./img/openvoxlogo5.jpg" alt="Strength" /></a> 
+        <div class="brand_img">
+          <img src="./img/brands/samsung_logo.jpg" alt="Brand" />
+          <img src="./img/brands/panasonic_logo.jpg" alt="Brand" />
+          <img src="./img/brands/siemens_logo.jpg" alt="Brand" />
+          <img src="./img/brands/fanvil_logo.jpg" alt="Brand" />
+          <img src="./img/brands/escene_logo.jpg" alt="Brand" />
+          <img src="./img/brands/yealink_logo.png" alt="Brand" />
+          <img src="./img/brands/openvox_logo.jpg" alt="Brand" />
+          <img src="./img/brands/senao_logo.png" alt="Brand" />
+          <img src="./img/brands/open-mesh_logo.png" alt="Brand" />
         </div>
       </div>
     </section>
@@ -989,19 +929,27 @@
         </div>
         <div class="strength_row">
           <div class="strength_icon">
-            <div><img src="./img/str_icon1.png" alt="Strength" /></div>
+            <div>
+              <img src="./img/strongSides/str_icon1.png" alt="Strength" />
+            </div>
             <p>грамотная консультация по каждому товару</p>
           </div>
           <div class="strength_icon">
-            <div><img src="./img/str_icon2.png" alt="Strength" /></div>
+            <div>
+              <img src="./img/strongSides/str_icon2.png" alt="Strength" />
+            </div>
             <p>любые способы оплаты</p>
           </div>
           <div class="strength_icon">
-            <div><img src="./img/str_icon3.png" alt="Strength" /></div>
+            <div>
+              <img src="./img/strongSides/str_icon3.png" alt="Strength" />
+            </div>
             <p>собственный сервисный центр</p>
           </div>
           <div class="strength_icon">
-            <div><img src="./img/str_icon4.png" alt="Strength" /></div>
+            <div>
+              <img src="./img/strongSides/str_icon4.png" alt="Strength" />
+            </div>
             <p>разветвленная сеть самовывоза (pickpoint)</p>
           </div>
         </div>
@@ -1009,7 +957,7 @@
     </section>
 
     <section class="container">
-      <div class="reasonsWrapper">
+      <div class="companyReasons">
         <div class="reasonsHeader">
           5 причин выбрать нашу компанию
           <div class="line"></div>
@@ -1018,7 +966,7 @@
         <div class="reasons">
           <div class="negative">
             <div class="basisHeader">
-              <img src="./img/negative.png" alt="Negative" />
+              <img src="./img/reasons/negative.png" alt="Negative" />
               <h1>
                 с чем сталкиваются клиенты в 95% случаев, когда обращаются к
                 нашим конкурентам?
@@ -1065,7 +1013,7 @@
 
           <div class="positive">
             <div class="basisHeader">
-              <img src="./img/positive.png" alt="Positive" />
+              <img src="./img/reasons/positive.png" alt="Positive" />
               <h1>какой сервис предложим вам мы?</h1>
             </div>
             <ul>
@@ -1160,40 +1108,22 @@
 
         <div class="purchase_path">
           <div class="purchase_step">
-            <img src="./img/coop1.png" alt="Purchase" />
-            <span><b>1. </b>Общение через сайт/по телефону</span>
+            <img src="./img/cooperation/coop1.png" alt="Purchase" />
+            <span><b>1. </b>Общение через сайт/по телефону </span>
           </div>
-          <svg 
-            xmlns="http://www.w3.org/2000/svg"
-           xmlns:xlink="http://www.w3.org/1999/xlink"
-           width="45px" height="10px">
-           <path fill-rule="evenodd"  fill="rgb(219, 222, 230)"
-           d="M-0.000,4.123 L36.970,4.123 C35.863,2.500 35.312,1.442 35.255,-0.000 C37.773,2.486 41.045,3.781 45.000,4.999 C41.045,6.165 37.917,7.588 35.255,10.000 C35.425,8.432 35.884,7.485 37.004,5.760 L-0.000,5.760 L-0.000,4.123 Z"/>
-          </svg>
+          <img src="./img/cooperation/coopArrow.png" alt="Path" />
           <div class="purchase_step">
-            <img src="./img/coop2.png" alt="Purchase" />
-            <span><b>2. </b>Подтверждение товара</span>
+            <img src="./img/cooperation/coop2.png" alt="Purchase" />
+            <span><b>2. </b>Подтверждение товара </span>
           </div>
-          <svg 
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="45px" height="10px">
-            <path fill-rule="evenodd"  fill="rgb(219, 222, 230)"
-            d="M-0.000,4.123 L36.970,4.123 C35.863,2.500 35.312,1.442 35.255,-0.000 C37.773,2.486 41.045,3.781 45.000,4.999 C41.045,6.165 37.917,7.588 35.255,10.000 C35.425,8.432 35.884,7.485 37.004,5.760 L-0.000,5.760 L-0.000,4.123 Z"/>
-          </svg>
+          <img src="./img/cooperation/coopArrow.png" alt="Path" />
           <div class="purchase_step">
-            <img src="./img/coop3.png" alt="Purchase" />
-            <span><b>3. </b>Доставка товара</span>
+            <img src="./img/cooperation/coop3.png" alt="Purchase" />
+            <span><b>3. </b>Доставка товара </span>
           </div>
-          <svg 
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="45px" height="10px">
-            <path fill-rule="evenodd"  fill="rgb(219, 222, 230)"
-            d="M-0.000,4.123 L36.970,4.123 C35.863,2.500 35.312,1.442 35.255,-0.000 C37.773,2.486 41.045,3.781 45.000,4.999 C41.045,6.165 37.917,7.588 35.255,10.000 C35.425,8.432 35.884,7.485 37.004,5.760 L-0.000,5.760 L-0.000,4.123 Z"/>
-          </svg>
+          <img src="./img/cooperation/coopArrow.png" alt="Path" />
           <div class="purchase_step">
-            <img src="./img/coop4.png" alt="Purchase" />
+            <img src="./img/cooperation/coop4.png" alt="Purchase" />
             <span
               ><b>4. </b>Оплата товара при получении, либо предоплата по
               безналичному рассчету до п. 3</span
@@ -1238,7 +1168,7 @@
     </section>
 
     <div id="footer">
-      <div class="footer_block">
+      <div class="footer">
         <div class="logo">
           <div>
             <p class="txt1">HO</p>
@@ -1289,49 +1219,42 @@
           </li>
         </ul>
 
-        <div class="recall">
-          <a href="#" class="recall_txt">Обратный Звонок</a>
+        <div class="footer_recall">
+          <a href="#" class="footer_recall_txt"
+            ><div class="spacer"></div>
+            Обратный<br />
+            Звонок</a
+          >
         </div>
 
         <div class="contacts">
-          <a href="tel:#" class="phone">+7 495 2-55-44-66</a>
+          <a href="tel:#" class="phone"> +7 495 2-55-44-66</a>
           <div class="social">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-            >
-              <image
-                width="16"
-                height="16"
-                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADYElEQVQ4jTVTW2hcVRRd55x7J5ObzNx5dJo20hQrxmk0ja2TlDZGTGkoJZR+GBQU4wsRRT+KnxXBL6Ug6EcRPwTRD3/8CT7Ij1VLfURSTU3rMKZpnDZNm8wj87hzn+ch94obDpvNPmutvffZhxQbJTSDFq5uF+EQh9R54z4GMl2TzamO7AwopdBDu9czLHsBUF8bJP53HN1yOLUfST0JDQAoKIQShiOdl8v+rbM2nBwFAyU0TKMjnOE7onrSIPG39ul739VJ7DwBsSKsTjToRItf99fOXbQWPtj0q7mAC0ARSCGjA0mgSQpHuOZl+8/3bvjlD3UaM0Ise+rM06Ror5z5rnHxrKmZmMxMRMoVrxapSwWEbQjIiJSBYVNUDqZYUsQQ+5Ede20qP1eZ/8yTfvz0zpN4Ze9z2KXvxKXtBbjSi0iUkpBQkY9iqbDmlEdzWuYretevPHnXr5opLYVHUiMAAR4yh5A3BuFxH4HkCKQAFyLygeBgiqLFLWPdu/OCtmwVT4RlhZcd4f83NG6j49ngUoIRAQIChYg78qExxVDqrE7SLbe+JwYdVa+OpcZylFxu/IUr7WuQikOEqpLDFwF8GYBLDi44pFRo+K0sDWRAwiDscW5jHov1JRzJFXAsN4FO4MIKbDjcgyd82IELO3AQKA4eEitB2PBLo880g1Z/jMRQ8WsoW+soZEYwvXsK7cBCsb2KtG7i1XufR39XH8rOBlzhRpUZ1LjFTr/+xP3XrJWjsXAfqI7Vzj9Ys27iQTOP6d3HcSC5H2PpQzix63EcyRYw0HUPLlV/w6ZXw8OJoTl6NF34IkF7Gg53IYRAr5bAD9Vf8ebSO5jfuIB8YhATucP439p+G023He6EnMyOf0pK1RX9/esff/J9/ednE1oifPRo3M2gjTiN40Aij8OZg+jv7sOWU8WXt79Byb6B2YGZj2b3zLyh3bQ39LrfTIWTtrkT/gAwytDDeuBJDz/VL2Oh/ge6aCxcZVjSxni68O2jmbG3FZSgNX9739VW6ZTJzK1+vW+BgrVbvgWXexFZr2aAUoqWsKExTU1lJ86PJkde5IpXpZLQkqzXOrXj+Iwt7d89GWw/lhobvNIuzt72Nsct0cmFrac0szZk9P0ynHjg8x16erHFO14IBoB/Af+zxgnR3eVsAAAAAElFTkSuQmCC"
-              />
-            </svg>
-
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              width="16"
-              height="18"
-              viewBox="0 0 16 18"
-            >
-              <image
-                width="16"
-                height="18"
-                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAADtUlEQVQ4jVVTW2wUZRg9/z/Xndndad3u0gttKVDoJS1YTTFVoEi0Bho1QHwxITEmmEjiA8/GFx70zRcf1RhD4gtGY4xAMFwSL7UpLJD0QgtL67bbZXfb3dnL7M7OzD/mHxKjXzIP/+Q7X853zvnIdraM3HoR1y7NRTv7YhO5te3Xy6XGmG01OzyXhQgBo5TUtKiajbRq92Kd0Rtri09/GzvWbw6M90AkBHBsd7hWanwxe3VpkjEfokQhihREoAAI7IYLq2IOFTbMV1cXnl7QIspd1/XOE4IZapXt1l+/S36ZSxcn9aiC3oEE5JCEhuUg0WXg5elhjL8xiK7+OERJABUIqkVrLHlj5Zt6tdkuHH/+9Jm7N5c/Mtp0nHjvJbx5bgL1mo2V5Dp8HxBlAVpExe7hdiiajMJ6CVSkKG9bbaqmpOjqQvYkAUHHrhjGpwYCwOTpgxg6tAulfBUgBCFdRmGzjO7+OLr37wCYD0GgeDKfmaJmvjrIQeVtC2a+Bl6SIiDebaBpuyhv1WDXHeiRECpFCz0DCUiKCEIJqmajn9p1x+CCFTIm/rqyGAx4eCeN2atLMGI6VuezSC/nUdqqolF3oEVVqBEVhBB4tqeLjDGJUArfdZG8vYxDJwYQjmpwHQbAh26oWFvMIpPKw2gLg7keKCUBA59vcnTwrQsAovxnuVSHXWvilbdHArXn/3wS0BdECp8B+Q0TZq4Kt+nB53bLYkE4fuDUB67jxfhE7vlmaiuwkQupRRQUc1W88Np+HDl1AKJAkV4pcF15K1RNTotGIrySeby1T5IFSBKFbTv45esZOLaDY++MYfTwHuhGCEpIQt9QO8ItGuauL/HwwYjra3TPSOeP/MFH+gBkRQLzfFz7dg6XPr0euMPBvCKtGhI9LUGf03Sxsz/+k3Du7Pm/rYp9dCtb2cmTxunxKHMBM6kCHs6lkUsXQQUaiHn7+/soZivo3peY7dob+4Q8+P0xamZj6Nble59tb1amJVUgPFiMMXiuj2fs/EAP/mYe8+PdLT9MTA99rEWURVFRZfi+v9CaCL8/+GLvuzNXFj5nzOPpK6pxNUmC0JGaKAuZUFi9byTCs1a5ntKjaoGLzXMASZEwdXY8b+ari7cuJ7Gj97mN3aMdHz56kPlDUUTIssRCUcXRI6oVNlTPKtc5k2dWSqoY7M1dqFtNQ9EU7B3tvOhT/Mw8xvhB+b4fNPNT599/S3Qdj6/I9+M2mCOH+y4eOXPwKw7hV5i8uQxZFv8H+rcA/AMz6K8ybxLLPgAAAABJRU5ErkJggg=="
-              />
-            </svg>
+            <a href="#" class="viber"
+              ><img src="./img/media/viber-2.png" alt="Viber"
+            /></a>
+            <a href="#" class="wtsapp"
+              ><img src="./img/media/wtsapp-2.png" alt="Whatsapp"
+            /></a>
             <a href="tel:#">+7 911 111-11-11</a>
           </div>
           <p class="schedule">(пн-пт с 9 до 18 ч)</p>
           <a href="#" class="email">info@homy.ru</a>
           <div class="skype">
-            <img src="./img/skype.png" alt="Skype" />
-            <p>skype-on.06</p>
+            <a href="#" class="skype_icon"
+              ><img src="./img/media/skype.png" alt="Skype"
+            /></a>
+            <p style="color: #fff">skype-on.06</p>
           </div>
-          <a><img src="./img/soc_media.png" alt="Media" /></a>
+          <div class="media">
+            <a href="#"><img src="./img/media/vk_icon.jpg" alt="Media" /></a>
+            <a href="#"
+              ><img src="./img/media/facebook_icon.jpg" alt="Media"
+            /></a>
+            <a href="#"
+              ><img src="./img/media/twitter_icon.jpg" alt="Media"
+            /></a>
+          </div>
         </div>
       </div>
     </div>
