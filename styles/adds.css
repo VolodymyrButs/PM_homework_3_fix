@@ -29,7 +29,7 @@
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire bannerContainer */
-    background-image: url("../img/banner_bg.png");
+    background-image: url("../img/banners/banner_bg.png");
     border-radius: 10px;
     display: flex;
     align-items: center;

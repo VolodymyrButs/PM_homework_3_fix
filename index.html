@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/topMenu.css" />
     <link rel="stylesheet" href="./styles/menu.css" />
-    <link rel="stylesheet" href="./styles/block2.css" />
-    <link rel="stylesheet" href="./styles/blocks_4_5_6.css" />
-    <link rel="stylesheet" href="./styles/block12.css" />
-    <link rel="stylesheet" href="./styles/block13.css" />
-    <link rel="stylesheet" href="./styles/block14.css" />
-    <link rel="stylesheet" href="./styles/block15.css" />
-    <link rel="stylesheet" href="./styles/block16.css" />
-    <link rel="stylesheet" href="./styles/block17.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/adds.css" />
+    <link rel="stylesheet" href="./styles/brands.css" />
+    <link rel="stylesheet" href="./styles/strength.css" />
+    <link rel="stylesheet" href="./styles/companyReasons.css" />
+    <link rel="stylesheet" href="./styles/numbers.css" />
+    <link rel="stylesheet" href="./styles/cooperation.css" />
+    <link rel="stylesheet" href="./styles/companyInfo.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/goodseLabel.css" />
     <link rel="stylesheet" href="./styles/promo.css" />
@@ -59,7 +59,7 @@
       </div>
     </div>
     <section class="container">
-      <div id="block2">
+      <div id="header">
         <div class="location">
           <div class="region">Ваш регион:</div>
           <div class="city">Москва</div>
@@ -80,17 +80,17 @@
         </div>
 
         <div class="recall">
-          <a href="#" class="recall_txt">Обратный</a>
-          <a href="#" class="recall_txt">Звонок</a>
+          <a href="#" class="recall_txt">Обратный звонок</a>
+          <!--<a href="#" class="recall_txt">Звонок</a>-->
         </div>
 
         <div class="icons">
           <a href="#" class="icon1"
-            ><img src="./img/icon1.png" alt="Search"
+            ><img src="./img/header/icon1.png" alt="Search"
           /></a>
           <button class="btn_cart">
             <a href="#" class="icon2"
-              ><img src="./img/icon2.png" alt="Cart"
+              ><img src="./img/header/icon2.png" alt="Cart"
             /></a>
             <div class="cart_info">
               <p class="cart">Корзина</p>
@@ -103,7 +103,7 @@
           <a href="#">
             <img
               style="vertical-align: middle"
-              src="./img/heart.png"
+              src="./img/header/heart.png"
               height="17px"
             />
             <span>Избранные</span>
@@ -112,7 +112,7 @@
           <a href="#">
             <img
               style="vertical-align: middle"
-              src="./img/btn_options_arrow.png"
+              src="./img/header/btn_options_arrow.png"
               height="23px"
             />
             <span>Сравнения</span>
@@ -123,21 +123,27 @@
         <div class="contacts">
           <a href="tel:#" class="phone">+7 495 2-55-44-66</a>
           <div class="social">
-            <img src="./img/viber.jpg" alt="Viber" />
-            <img src="./img/wtsapp.jpg" alt="Whatsapp" />
+            <a href="#" class="viber"
+              ><img src="./img/media/viber-2.png" alt="Viber"
+            /></a>
+            <a href="#" class="wtsapp"
+              ><img src="./img/media/wtsapp-2.png" alt="Whatsapp"
+            /></a>
             <a href="tel:#">+7 911 111-11-11</a>
           </div>
           <p class="schedule">(пн-пт с 9 до 18 ч)</p>
           <a href="#" class="email">info@homy.ru</a>
           <div class="skype">
-            <img src="./img/skype.png" alt="Skype" />
+            <a href="#" class="skype_icon"
+              ><img src="./img/media/skype.png" alt="Skype"
+            /></a>
             <p>skype-on.06</p>
           </div>
         </div>
 
         <div class="search">
           <div class="search_txt">
-            <img src="./img/coin.png" />
+            <img src="./img/header/coin.png" />
             <div>
               <span class="search_txt1">void решения</span>
               <br />
@@ -863,38 +869,55 @@
       </div>
     </section>
     <section class="container">
-      <div class="block12">
+      <div class="brands">
         <div class="brandsHeader">
           Наши ключевые бренды <span>❯</span>
           <div class="line"></div>
           <a href="#">Все бренды</a>
-          <button class="navArrow">❮</button><button class="navArrow">❯</button>
         </div>
-        <img src="./img/brands.png" alt="Brand" />
+        <div class="brand_img">
+          <img src="./img/brands/samsung_logo.jpg" alt="Brand" />
+          <img src="./img/brands/panasonic_logo.jpg" alt="Brand" />
+          <img src="./img/brands/siemens_logo.jpg" alt="Brand" />
+          <img src="./img/brands/fanvil_logo.jpg" alt="Brand" />
+          <img src="./img/brands/escene_logo.jpg" alt="Brand" />
+          <img src="./img/brands/yealink_logo.png" alt="Brand" />
+          <img src="./img/brands/openvox_logo.jpg" alt="Brand" />
+          <img src="./img/brands/senao_logo.png" alt="Brand" />
+          <img src="./img/brands/open-mesh_logo.png" alt="Brand" />
+        </div>
       </div>
     </section>
 
     <section class="container">
-      <div class="block13">
+      <div class="strength">
         <div class="strengthHeader">
           Наши сильные стороны
           <div class="line"></div>
         </div>
         <div class="strength_row">
           <div class="strength_icon">
-            <div><img src="./img/str_icon1.png" alt="Strength" /></div>
+            <div>
+              <img src="./img/strongSides/str_icon1.png" alt="Strength" />
+            </div>
             <p>грамотная консультация по каждому товару</p>
           </div>
           <div class="strength_icon">
-            <div><img src="./img/str_icon2.png" alt="Strength" /></div>
+            <div>
+              <img src="./img/strongSides/str_icon2.png" alt="Strength" />
+            </div>
             <p>любые способы оплаты</p>
           </div>
           <div class="strength_icon">
-            <div><img src="./img/str_icon3.png" alt="Strength" /></div>
+            <div>
+              <img src="./img/strongSides/str_icon3.png" alt="Strength" />
+            </div>
             <p>собственный сервисный центр</p>
           </div>
           <div class="strength_icon">
-            <div><img src="./img/str_icon4.png" alt="Strength" /></div>
+            <div>
+              <img src="./img/strongSides/str_icon4.png" alt="Strength" />
+            </div>
             <p>разветвленная сеть самовывоза (pickpoint)</p>
           </div>
         </div>
@@ -902,7 +925,7 @@
     </section>
 
     <section class="container">
-      <div class="block14">
+      <div class="companyReasons">
         <div class="reasonsHeader">
           5 причин выбрать нашу компанию
           <div class="line"></div>
@@ -911,7 +934,7 @@
         <div class="reasons">
           <div class="negative">
             <div class="basisHeader">
-              <img src="./img/negative.png" alt="Negative" />
+              <img src="./img/reasons/negative.png" alt="Negative" />
               <h1>
                 с чем сталкиваются клиенты в 95% случаев, когда обращаются к
                 нашим конкурентам?
@@ -958,7 +981,7 @@
 
           <div class="positive">
             <div class="basisHeader">
-              <img src="./img/positive.png" alt="Positive" />
+              <img src="./img/reasons/positive.png" alt="Positive" />
               <h1>какой сервис предложим вам мы?</h1>
             </div>
             <ul>
@@ -1053,19 +1076,22 @@
 
         <div class="purchase_path">
           <div class="purchase_step">
-            <img src="./img/coop1.png" alt="Purchase" />
-            <span><b>1. </b>Общение через сайт/по телефону</span>
+            <img src="./img/cooperation/coop1.png" alt="Purchase" />
+            <span><b>1. </b>Общение через сайт/по телефону </span>
           </div>
+          <img src="./img/cooperation/coopArrow.png" alt="Path" />
           <div class="purchase_step">
-            <img src="./img/coop2.png" alt="Purchase" />
-            <span><b>2. </b>Подтверждение товара</span>
+            <img src="./img/cooperation/coop2.png" alt="Purchase" />
+            <span><b>2. </b>Подтверждение товара </span>
           </div>
+          <img src="./img/cooperation/coopArrow.png" alt="Path" />
           <div class="purchase_step">
-            <img src="./img/coop3.png" alt="Purchase" />
-            <span><b>3. </b>Доставка товара</span>
+            <img src="./img/cooperation/coop3.png" alt="Purchase" />
+            <span><b>3. </b>Доставка товара </span>
           </div>
+          <img src="./img/cooperation/coopArrow.png" alt="Path" />
           <div class="purchase_step">
-            <img src="./img/coop4.png" alt="Purchase" />
+            <img src="./img/cooperation/coop4.png" alt="Purchase" />
             <span
               ><b>4. </b>Оплата товара при получении, либо предоплата по
               безналичному рассчету до п. 3</span
@@ -1110,7 +1136,7 @@
     </section>
 
     <div id="footer">
-      <div class="block18">
+      <div class="footer">
         <div class="logo">
           <div>
             <p class="txt1">HO</p>
@@ -1162,24 +1188,41 @@
         </ul>
 
         <div class="footer_recall">
-          <a href="#" class="footer_recall_txt">Обратный</a>
-          <a href="#" class="footer_recall_txt">Звонок</a>
+          <a href="#" class="footer_recall_txt"
+            ><div class="spacer"></div>
+            Обратный<br />
+            Звонок</a
+          >
         </div>
 
         <div class="contacts">
-          <a href="tel:#" class="phone">+7 495 2-55-44-66</a>
+          <a href="tel:#" class="phone"> +7 495 2-55-44-66</a>
           <div class="social">
-            <img src="./img/viber.jpg" alt="Viber" />
-            <img src="./img/wtsapp.jpg" alt="Whatsapp" />
+            <a href="#" class="viber"
+              ><img src="./img/media/viber-2.png" alt="Viber"
+            /></a>
+            <a href="#" class="wtsapp"
+              ><img src="./img/media/wtsapp-2.png" alt="Whatsapp"
+            /></a>
             <a href="tel:#">+7 911 111-11-11</a>
           </div>
           <p class="schedule">(пн-пт с 9 до 18 ч)</p>
           <a href="#" class="email">info@homy.ru</a>
           <div class="skype">
-            <img src="./img/skype.png" alt="Skype" />
-            <p>skype-on.06</p>
+            <a href="#" class="skype_icon"
+              ><img src="./img/media/skype.png" alt="Skype"
+            /></a>
+            <p style="color: #fff">skype-on.06</p>
           </div>
-          <a><img src="./img/soc_media.png" alt="Media" /></a>
+          <div class="media">
+            <a href="#"><img src="./img/media/vk_icon.jpg" alt="Media" /></a>
+            <a href="#"
+              ><img src="./img/media/facebook_icon.jpg" alt="Media"
+            /></a>
+            <a href="#"
+              ><img src="./img/media/twitter_icon.jpg" alt="Media"
+            /></a>
+          </div>
         </div>
       </div>
     </div>
