@@ -43,10 +43,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 30px;
+  gap: 30px 10px;
   margin-bottom: 30px;
 }
-
+.purchase_path svg:nth-child(4) {
+  display: none;
+}
 .purchase_step {
   display: flex;
   flex-direction: column;
@@ -59,7 +61,11 @@
 .purchase_path svg {
   margin-top: 14px;
 }
-
+@media screen and (min-width: 750px) {
+  .purchase_path svg:nth-child(4) {
+    display: block;
+  }
+}
 @media screen and (min-width: 980px) {
   .purchase_step {
     display: flex;

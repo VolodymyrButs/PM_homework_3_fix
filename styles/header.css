@@ -95,6 +95,8 @@
 }
 
 .icons {
+  display: flex;
+  align-items: center;
   grid-area: icons;
   margin-top: 0.5rem;
   justify-self: end;
