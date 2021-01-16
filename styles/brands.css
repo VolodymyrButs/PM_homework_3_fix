@@ -1,0 +1,21 @@
+#brands {
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  #brands {
+    display: block;
+  }
+  .brandsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 40px;
+  }
+
+  .brandsWrapper * {
+    height: 40px;
+    padding: 0 3px;
+  }
+}

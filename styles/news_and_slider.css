@@ -83,13 +83,11 @@
   }
 
   .arrow {
-    height: 60px;
-    width: 25px;
-    margin: auto 20px;
-    cursor: pointer;
+    margin: 10px;
   }
 
   .arrow:hover {
+    width: 16px;
     height: 70px;
   }
 
