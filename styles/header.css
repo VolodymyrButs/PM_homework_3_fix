@@ -270,7 +270,7 @@
       "social"
       "skype"
       "email";
-    text-align: right;
+    justify-content: left;
     margin: var(--indent) 0;
   }
 
@@ -279,6 +279,7 @@
     padding: 0;
     line-height: 10px;
     font-weight: 200;
+    text-align: left;
   }
 
   .phone {
@@ -297,15 +298,19 @@
   .skype {
     display: flex;
     flex-direction: row;
+    justify-self: start;
   }
 
   .social {
     grid-area: social;
-    padding-left: 40px;
   }
 
   .skype {
     grid-area: skype;
+  }
+
+  .skype_icon > img {
+    margin-top: -5px;
   }
 
   .email {
