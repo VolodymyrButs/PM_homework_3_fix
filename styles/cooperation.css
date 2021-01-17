@@ -53,7 +53,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  gap: 30px;
+  gap: 10px;
   margin-bottom: 30px;
 }
 
@@ -80,6 +80,7 @@
 
   .purchase_path {
     flex-wrap: nowrap;
+     gap: 30px;
   }
 }
 @media screen and (min-width: 980px) {
