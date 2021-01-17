@@ -34,18 +34,19 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 35px auto;
-
   }
 
-  .brand_img > img {
+  .brand_img > a {
     width: 10%;
   }
-
-  .brand_img > img:nth-of-type(3) {
+  .brand_img > a > img {
+    width: 100%;
+  }
+  .brand_img > a:nth-of-type(3) {
     height: 30px;
   }
 
-  .brand_img > img:last-of-type {
+  .brand_img > a:last-of-type {
     display: none;
   }
 }
@@ -61,7 +62,7 @@
     line-height: 20pt;
   }
 
-  .brand_img > img:last-of-type {
+  .brand_img > a:last-of-type {
     display: block;
   }
 }
