@@ -179,10 +179,12 @@
 }
 .splide__arrow.splide__arrow--prev {
   left: calc(100vw - 105px);
-  fill: red;
 }
 .splide__arrow.splide__arrow--next {
   right: 5px;
+}
+.splide__arrow.splide__arrow--next svg,
+.splide__arrow.splide__arrow--prev svg {
   fill: red;
 }
 @media screen and (min-width: 750px) {
@@ -208,17 +210,12 @@
     border: none;
   }
 
-  .splide__arrow.splide__arrow--next svg path,
-  .splide__arrow.splide__arrow--prev svg path {
-    transform: translate(-1513px, -1473px);
-    fill: #ff5816;
-    fill-rule: evenodd;
-  }
-
   .splide__arrow.splide__arrow--next svg {
-    transform: scale(3);
+    fill: #ff5816;
+    transform: scale(2, 3);
   }
   .splide__arrow.splide__arrow--prev svg {
-    transform: rotate(180deg) scale(3);
+    fill: #ff5816;
+    transform: rotate(180deg) scale(2, 3);
   }
 }
