@@ -110,7 +110,9 @@
   margin-top: 0.5rem;
   justify-self: end;
 }
-
+.money {
+  padding-right: 3px;
+}
 .icon1 > img {
   width: 1.5rem;
 }

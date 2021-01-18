@@ -8,11 +8,16 @@
   background-color: #ff5816;
   border-radius: 5px;
   padding: 0 12px;
-  overflow: hidden;
-  flex-wrap: wrap;
+
+  flex-wrap: nowrap;
   border-bottom: 2px solid #c44411;
 }
-
+.wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
 .menuWrapper li {
   font-size: 13px;
   background-color: #ff5816;
@@ -37,7 +42,8 @@
   text-decoration: underline;
 }
 
-.menuWrapper a {
+.next,
+.prev {
   position: absolute;
   background-color: #c44411;
   width: 12px;
@@ -54,9 +60,19 @@
 .menuWrapper a:hover {
   color: #879296;
 }
-
+.prev {
+  left: 0;
+  right: auto;
+}
+.prev svg {
+  transform: rotate(180deg);
+}
 @media screen and (min-width: 1140px) {
   .menuWrapper {
     display: flex;
   }
+}
+.next,
+.prev {
+  z-index: 5;
 }

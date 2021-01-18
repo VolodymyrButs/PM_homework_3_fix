@@ -50,7 +50,7 @@
   top: 18px;
   left: 23px;
 }
-.goodWrapper.up::before {
+.goodWrapper.recommended::before {
   position: absolute;
   content: "👍";
   background: rgb(122, 4, 122);
@@ -65,7 +65,7 @@
   top: -5px;
   left: 15px;
 }
-.goodWrapper.up::after {
+.goodWrapper.recommended::after {
   position: absolute;
   content: "";
   background: rgb(122, 4, 122);
