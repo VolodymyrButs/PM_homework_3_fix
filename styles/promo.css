@@ -21,6 +21,7 @@
   flex-shrink: 1;
 }
 .promoWrapper img {
+  height: 135px;
   max-height: 137px;
 }
 

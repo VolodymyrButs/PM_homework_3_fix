@@ -6,14 +6,15 @@ document.querySelector(".currency").innerHTML = CURRENCY;
 quantity.innerHTML = BASKET.elements;
 quantityMob.innerHTML = BASKET.elements;
 money.innerHTML = BASKET.price;
-const buy = (price, currency) => {
-  if (price && currency) {
+
+const getPrice = (price, currency) => {
+  return currency === CURRENCY ? price : price * CURRENCY_EXCHANGE[currency];
+};
+const buy = (price) => {
+  if (price) {
     quantity.innerHTML = Number(quantity.innerHTML) + 1;
     quantityMob.innerHTML = Number(quantityMob.innerHTML) + 1;
-    money.innerHTML =
-      currency === CURRENCY
-        ? Number(money.innerHTML) + price
-        : Number(money.innerHTML) + price * CURRENCY_EXCHANGE[currency];
+    money.innerHTML = Number(money.innerHTML) + price;
   } else {
     return;
   }
@@ -51,17 +52,17 @@ const card = (item) => {
       <img src='${item.img || "./img/noimage.jpg"}' alt="Phone image" />
       <a href=${item.url || "#"} class="goodName">${item.description}</a>
       <div class="priceBlock">
-        Цена: <span class="newPrice">${item.price || "SOLD OUT"} ${
-    item.price && item.currency ? item.currency : ""
-  }</span>
-        <span class="oldPrice">${item.oldPrice || ""} ${
-    item.oldPrice && item.currency ? item.currency : ""
-  }</span>
+        Цена: <span class="newPrice">${
+          getPrice(item.price, item.currency) || "SOLD OUT"
+        } ${item.price && item.currency ? CURRENCY : ""}</span>
+        <span class="oldPrice">${
+          getPrice(item.oldPrice, item.currency) || ""
+        } ${item.oldPrice && item.currency ? CURRENCY : ""}</span>
       </div>
       <div class="buyBlock" >
-        <div class="buyButton ${!item.price && "disable"}" onclick='buy(${
-    item.price
-  },"${item.currency}")'>
+        <div class="buyButton ${
+          !item.price && "disable"
+        }" onclick='buy(${getPrice(item.price, item.currency)})'>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 495.4 495.4"
