@@ -7,6 +7,7 @@
   .bannerWrapper {
     display: flex;
     overflow: hidden;
+    justify-content: center;
     width: 100%;
   }
   .rightBanner {
