@@ -27,7 +27,7 @@ const TOP_MENU = {
       },
     ],
   },
-  about_company: {
+  about_company0: {
     order: 2,
     title: "О компании",
     submenu: [
@@ -43,7 +43,7 @@ const TOP_MENU = {
       },
     ],
   },
-  catalog: {
+  catalog0: {
     order: 5,
     title: "Каталог",
     submenu: [
@@ -59,12 +59,54 @@ const TOP_MENU = {
       },
     ],
   },
+  catalog1: {
+    order: 4,
+    title: "Каталог",
+    submenu: [
+      {
+        order: 1,
+        title: "VOIP оборудование",
+        url: "voip_equipment.html",
+      },
+      {
+        order: 2,
+        title: "GSM оборудование",
+        url: "gsm_equipment.html",
+      },
+    ],
+  },
+  about_company4: {
+    order: 2,
+    title: "О компании",
+    submenu: [
+      {
+        order: 1,
+        title: "VOIP оборудование",
+        url: "voip_equipment.html",
+      },
+      {
+        order: 2,
+        title: "GSM оборудование",
+        url: "gsm_equipment.html",
+      },
+    ],
+  },
   payment_delivery: {
     order: 3,
     title: "Payment and delivery",
     url: "payment_delivery.html",
   },
   payment_delivery3: {
+    order: 1,
+    title: "Payment and delivery",
+    url: "payment_delivery.html",
+  },
+  payment_delivery1: {
+    order: 3,
+    title: "Payment and delivery",
+    url: "payment_delivery.html",
+  },
+  payment_delivery2: {
     order: 1,
     title: "Payment and delivery",
     url: "payment_delivery.html",

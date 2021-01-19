@@ -13,7 +13,7 @@ if (typeof TOP_MENU !== "undefined") {
         ? (topLi.innerHTML = item[1].title)
         : (topLi.innerHTML = `<a href=${item[1].url}>${item[1].title}</a>`);
 
-      let sep = document.createElement("li");
+      let sep = document.createElement("span");
       sep.className = "sep";
 
       if (item[1].submenu) {

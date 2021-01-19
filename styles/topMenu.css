@@ -35,8 +35,10 @@
 #menu li {
   display: flex;
   justify-content: center;
+  align-items: center;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 13px;
+  height: 100%;
 }
 #menu li:hover {
   border-bottom: 3px solid #ff5816;
@@ -63,11 +65,12 @@
   color: #bdc3c5;
   text-decoration: none;
   cursor: pointer;
-  font-size: 16px;
-  padding: 9px 5px;
+  font-size: 13px;
+  padding: 3px 5px;
 }
 .withArrow {
   text-align: center;
+  min-width: 110px;
 }
 .withArrow::after {
   content: "\25BC";
@@ -149,7 +152,7 @@
   .sep {
     display: block;
     width: 0px;
-    height: 15px;
+    height: 70%;
     border-left: 1px solid #323232;
   }
 
