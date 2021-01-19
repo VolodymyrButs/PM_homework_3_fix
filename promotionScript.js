@@ -78,7 +78,7 @@ PROMOTIONS.forEach((item) => {
   promoItem.classList.add("splide__slide");
   promoWrapper.appendChild(promoItem);
 });
-promoWrapper.innerHTML;
+
 const promoItem = document.getElementsByClassName("container promo")[0];
 promoItem.innerHTML = `
 <div class="goodsHeader">

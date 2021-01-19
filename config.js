@@ -131,6 +131,16 @@ const BANNER = [
     img: "https://same_url2.jpg",
     url: "voip_equipment.html",
   },
+  {
+    order: 1,
+    img: "./img/banners/banner_bg.png",
+    url: "voip_equipment.html",
+  },
+  {
+    order: 1,
+    img: "./img/1_large.png",
+    url: "voip_equipment.html",
+  },
 ];
 
 // type ['new', 'recommended', 'sale']
