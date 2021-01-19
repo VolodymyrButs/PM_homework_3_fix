@@ -151,6 +151,8 @@
     display: flex;
     padding: var(--indent) 0;
     border-bottom: 1px dotted #c4c4c4;
+    max-height: 130px;
+    overflow: hidden;
   }
 
   .imgWrapper {
@@ -189,6 +191,8 @@
     font-size: 13px;
     font-weight: bold;
     margin-bottom: 3px;
+    max-height: 33px;
+    overflow: hidden;
   }
   .newsDesc {
     font-size: 13px;
