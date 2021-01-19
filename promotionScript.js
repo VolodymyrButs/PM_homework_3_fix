@@ -7,36 +7,48 @@ const timeBlock = (item) =>
 <div class="timer">
   <div class="timerDigits">
     <p class="timerDigit">
-      ${(item.time_action.match(/(\d+)d/)[1].length = 1
+      ${
+        item.time_action.match(/(\d+)d/)[1].length == 1
+          ? 0
+          : item.time_action.match(/(\d+)d/)[1][0]
+      }
+    </p>
+    <p class="timerDigit">
+      ${
+        item.time_action.match(/(\d+)d/)[1].length == 1
+          ? item.time_action.match(/(\d+)d/)[1][0]
+          : item.time_action.match(/(\d+)d/)[1][1]
+      }
+    </p>
+    <p>:</p>
+    <p class="timerDigit">
+    ${
+      item.time_action.match(/(\d+)h/)[1].length == 1
         ? 0
-        : item.time_action.match(/(\d+)d/)[1][0])}
-    </p>
-    <p class="timerDigit">
-      ${(item.time_action.match(/(\d+)d/)[1].length = 1
-        ? item.time_action.match(/(\d+)d/)[1][0]
-        : item.time_action.match(/(\d+)d/)[1][1])}
-    </p>
-    <p>:</p>
-    <p class="timerDigit">
-    ${(item.time_action.match(/(\d+)h/)[1].length = 1
-      ? 0
-      : item.time_action.match(/(\d+)h/)[1][0])}
+        : item.time_action.match(/(\d+)h/)[1][0]
+    }
   </p>
   <p class="timerDigit">
-    ${(item.time_action.match(/(\d+)h/)[1].length = 1
-      ? item.time_action.match(/(\d+)h/)[1][0]
-      : item.time_action.match(/(\d+)h/)[1][1])}
+    ${
+      item.time_action.match(/(\d+)h/)[1].length == 1
+        ? item.time_action.match(/(\d+)h/)[1][0]
+        : item.time_action.match(/(\d+)h/)[1][1]
+    }
   </p>
     <p>:</p>
     <p class="timerDigit">
-    ${(item.time_action.match(/(\d+)m/)[1].length = 1
-      ? 0
-      : item.time_action.match(/(\d+)m/)[1][0])}
+    ${
+      item.time_action.match(/(\d+)m/)[1].length == 1
+        ? 0
+        : item.time_action.match(/(\d+)m/)[1][0]
+    }
   </p>
   <p class="timerDigit">
-    ${(item.time_action.match(/(\d+)m/)[1].length = 1
-      ? item.time_action.match(/(\d+)m/)[1][0]
-      : item.time_action.match(/(\d+)m/)[1][1])}
+    ${
+      item.time_action.match(/(\d+)m/)[1].length == 1
+        ? item.time_action.match(/(\d+)m/)[1][0]
+        : item.time_action.match(/(\d+)m/)[1][1]
+    }
   </p>
   </div>
   <div class="timerLabel">
@@ -150,4 +162,3 @@ function myFunc() {
   }).mount();
 }
 myFunc();
-console.log(perPagePromoCount);
