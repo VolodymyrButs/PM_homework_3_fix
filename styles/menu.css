@@ -1,78 +1,89 @@
-.menuWrapper {
+.carousel-inner {
   position: relative;
   display: none;
-  list-style: none;
-  justify-content: space-between;
   height: 44px;
-  max-width: 100%;
+  width: 100%;
   background-color: #ff5816;
   border-radius: 5px;
   padding: 0 12px;
-
+  overflow: hidden;
   flex-wrap: nowrap;
   border-bottom: 2px solid #c44411;
+  transition: transform 0.6s ease;
+  box-sizing: border-box;
 }
-.wrap {
-  position: relative;
+
+.carousel-container .track {
   display: flex;
-  flex-wrap: nowrap;
-  overflow: hidden;
+  justify-content: space-between;
+  transition: transform 0.5s;
 }
+
 .menuWrapper li {
+  list-style: none;
+  display: flex;
   font-size: 13px;
   background-color: #ff5816;
   line-height: 16px;
-  padding: 6px;
+  padding: 10px;
   height: 44px;
-  text-transform: uppercase;
-  color: #fff;
+  width: 186px;
+
   flex-shrink: 0;
   cursor: pointer;
-}
-
-.menuWrapper .separator {
-  height: 100%;
-  padding: 0;
-  width: 0;
   border-right: 1px solid #ff743d;
+  justify-content: center;
+  align-items: center;
 }
-
+.menuWrapper li a {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
 .menuWrapper li:hover {
   background-color: #ff743d;
   text-decoration: underline;
 }
 
-.next,
-.prev {
+.carousel-inner .menuWrapperArrow_prev,
+.carousel-inner .menuWrapperArrow_next {
   position: absolute;
   background-color: #c44411;
   width: 12px;
   height: 100%;
-  padding-left: 3px;
-  right: 0px;
   color: #fff;
-  top: 0px;
+  padding-top: 2px;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 14px;
   vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+  border: none;
+
+  z-index: 200;
 }
 
-.menuWrapper a:hover {
+.menuWrapperArrow {
+  display: inline;
+}
+
+.carousel-inner .menuWrapperArrow_prev {
+  left: 0;
+}
+
+.carousel-inner .menuWrapperArrow_next {
+  right: 0;
+}
+
+.menuWrapperArrow:hover {
   color: #879296;
 }
-.prev {
-  left: 0;
-  right: auto;
-}
-.prev svg {
-  transform: rotate(180deg);
+
+.menuWrapperArrow.hide {
+  display: none;
 }
 @media screen and (min-width: 1140px) {
-  .menuWrapper {
+  .carousel-inner {
     display: flex;
   }
-}
-.next,
-.prev {
-  z-index: 5;
 }

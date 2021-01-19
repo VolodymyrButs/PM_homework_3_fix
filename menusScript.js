@@ -30,9 +30,6 @@ if (typeof TOP_MENU !== "undefined") {
             submenuLi.className = "submenuLi";
             submenuLi.innerHTML = `<a class='subMenuLink' href=${item.url}>${item.title}</a>`;
 
-            // In addition there MUST be a default error page
-            //'404page.html' instead of '#'
-
             submenuUl.appendChild(submenuLi);
           });
           topLi.appendChild(submenuUl);
@@ -50,36 +47,17 @@ if (typeof TOP_MENU !== "undefined") {
 
 const menu = document.querySelector(".menuWrapper");
 let sortedMenu = MENU.sort((a, b) => a.order - b.order);
-
+if (MENU.length <= 6) {
+  document.querySelector(".carousel-inner").style.justifyContent = "center";
+}
 if (typeof MENU !== "undefined") {
-  let prev = document.createElement("button");
-  prev.className = "menuWrapperArrow menuWrapperArrow_prev";
-  prev.innerHTML = "❮";
-
-  menu.appendChild(prev);
-
   sortedMenu.forEach((item, index) => {
     if (typeof item.title !== "undefined") {
       let li = document.createElement("li");
-      li.innerHTML = item.title;
-
-      li.setAttribute("href", item.url);
-      // In addition there MUST be a default error page
-      //'404page.html' instead of '#'
-
-      let separator = document.createElement("li");
-      separator.className = "separator";
-
+      li.innerHTML = `<a href=${item.url || "#"}> ${item.title}</a>`;
       menu.appendChild(li);
-      menu.appendChild(separator);
     }
   });
-
-  let next = document.createElement("button");
-  next.className = "menuWrapperArrow menuWrapperArrow_next";
-  next.innerHTML = "❯";
-
-  menu.appendChild(next);
 } else {
   menu.remove();
 }
