@@ -52,6 +52,7 @@ const promoWrapper = document.createElement("div");
 PROMOTIONS.forEach((item) => {
   let promoItem = document.createElement("div");
   promoItem.innerHTML = `
+  <div class="promoWrapper">
   <a class="promoName">${item.title}</a>
   <img src= ${item.img} alt="Phone image" />
   <p class="promoDescription">
@@ -59,8 +60,9 @@ PROMOTIONS.forEach((item) => {
   </p>
   ${timeBlock(item)}
   <a href=${item.url || "#"}>Подробнее</a>
+  </div>
 `;
-  promoItem.classList.add("promoWrapper");
+
   promoItem.classList.add("splide__slide");
   promoWrapper.appendChild(promoItem);
 });
@@ -75,7 +77,7 @@ promoItem.innerHTML = `
 
 <div class="promosWrapper splide" id="promoWrapper1">
 	<div class="splide__track">
-		<div class="splide__list">
+        <div class="splide__list">
             ${promoWrapper.innerHTML}
         </div>
     </div>
@@ -130,8 +132,7 @@ const perPagePromo = (width) => {
     new Splide("#promoWrapper1", {
       perPage: perPagePromoCount,
       perMove: 1,
-      padding: 20,
-      gap: 45,
+      padding: 15,
       pagination: false,
       arrows: arrowsPromo,
     }).mount();
@@ -143,11 +144,10 @@ function myFunc() {
   new Splide("#promoWrapper1", {
     perPage: perPagePromoCount,
     perMove: 1,
-    padding: 20,
-    gap: 45,
+    padding: 15,
     pagination: false,
     arrows: arrowsPromo,
   }).mount();
 }
 myFunc();
-console.log(promoWrapper.innerHTML);
+console.log(perPagePromoCount);

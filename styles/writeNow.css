@@ -8,12 +8,12 @@
   height: 275px;
   max-width: 300px;
   align-items: center;
-  margin: 0 15px;
+  margin: 0 25px;
   overflow: hidden;
 }
 
 .writeNowItem img {
-  max-width: 170px;
+  max-width: 250px;
   height: 200px;
   margin-bottom: 10px;
 }
