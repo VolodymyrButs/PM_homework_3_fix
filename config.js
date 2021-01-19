@@ -116,7 +116,7 @@ const TOP_MENU = {
 const MENU = [
   {
     order: 1,
-    title: "VOIP ОБОРУДОВАНИЕ",
+    title: "first",
     url: "voip_equipment.html",
   },
   {
@@ -133,6 +133,27 @@ const MENU = [
   {
     order: 4,
     title: "VIDEO оборудование",
+    url: "video_equipment.html",
+  },
+  {
+    order: 2,
+    title: "SKYPE оборудование",
+    url: "skype_equipment.html",
+  },
+
+  {
+    order: 3,
+    title: "GSM оборудование",
+    url: "gsm_equipment.html",
+  },
+  {
+    order: 4,
+    title: "VIDEO оборудование",
+    url: "video_equipment.html",
+  },
+  {
+    order: 8,
+    title: "Last",
     url: "video_equipment.html",
   },
 ];

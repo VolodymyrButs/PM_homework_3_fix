@@ -40,7 +40,7 @@
   font-size: 13px;
   height: 100%;
 }
-#menu li:hover {
+#menu > li:hover {
   border-bottom: 3px solid #ff5816;
   border-top: 3px solid transparent;
 }
