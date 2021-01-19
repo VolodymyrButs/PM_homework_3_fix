@@ -8,7 +8,9 @@ quantityMob.innerHTML = BASKET.elements;
 money.innerHTML = BASKET.price;
 
 const getPrice = (price, currency) => {
-  return currency === CURRENCY ? price : price * CURRENCY_EXCHANGE[currency];
+  return currency === CURRENCY
+    ? price
+    : Math.ceil(price * CURRENCY_EXCHANGE[currency], 1);
 };
 const buy = (price) => {
   if (price) {
