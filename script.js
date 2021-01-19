@@ -286,6 +286,7 @@ const perPageSale = (width) => {
     }).mount();
   }
 })();
+
 function myFunc() {
   perPageNew(document.body.clientWidth);
   new Splide("#goodsWrapperNew", {

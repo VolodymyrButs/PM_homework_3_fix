@@ -78,6 +78,28 @@ const NEWS = [
     date: "2021/01/01",
     title: "Новинка от «Элтекс» - точка доступа WEP",
     description:
+      "Предприятие «Элтекс» запустило производство точки доступа WEP-2ac.Предприятие «Элтекс» запустило производство точки доступа WEP-2ac.",
+    img: "./img/GRP_b2b_large.jpg",
+    url: "voip_equipment.html",
+  },
+  {
+    date: "2020/12/25",
+    title: "Новинка от компании Grandstream!",
+    description: "Скоро в продаже мощный маршрутизатор GWN7000!",
+    img: "./img/1_large.png",
+    url: "voip_equipment.html",
+  },
+  {
+    date: "2021/01/14",
+    title: "WiFi точка доступа от компании Grandstream!",
+    description: "Уже скоро в продаже!",
+    img: "./img/1_large.png",
+    url: "voip_equipment.html",
+  },
+  {
+    date: "2021/01/01",
+    title: "Новинка от «Элтекс» - точка доступа WEP",
+    description:
       "Предприятие «Элтекс» запустило производство точки доступа WEP-2ac.",
     img: "./img/1_large.png",
     url: "voip_equipment.html",
