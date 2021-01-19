@@ -148,6 +148,7 @@ const perPagePromo = (width) => {
       pagination: false,
       arrows: arrowsPromo,
     }).mount();
+    window.location.reload();
   }
 })();
 

@@ -11,8 +11,8 @@ const BASKET = {
 };
 
 const TOP_MENU = {
-  catalog: {
-    order: 1,
+  catalog8: {
+    order: 4,
     title: "Каталог",
     submenu: [
       {
@@ -43,8 +43,29 @@ const TOP_MENU = {
       },
     ],
   },
+  catalog: {
+    order: 5,
+    title: "Каталог",
+    submenu: [
+      {
+        order: 2,
+        title: "оборудование",
+        url: "voip_equipment.html",
+      },
+      {
+        order: 1,
+        title: "GSM ",
+        url: "gsm_equipment.html",
+      },
+    ],
+  },
   payment_delivery: {
     order: 3,
+    title: "Payment and delivery",
+    url: "payment_delivery.html",
+  },
+  payment_delivery3: {
+    order: 1,
     title: "Payment and delivery",
     url: "payment_delivery.html",
   },

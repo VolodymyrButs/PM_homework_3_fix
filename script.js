@@ -284,6 +284,7 @@ const perPageSale = (width) => {
       pagination: false,
       arrows: arrowsRecomended,
     }).mount();
+    window.location.reload();
   }
 })();
 
