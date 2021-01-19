@@ -1,12 +1,15 @@
 // buy button
 let quantity = document.querySelector(".quantity");
+let quantityMob = document.querySelector(".quantityMob");
 let money = document.querySelector(".money");
 document.querySelector(".currency").innerHTML = CURRENCY;
 quantity.innerHTML = BASKET.elements;
+quantityMob.innerHTML = BASKET.elements;
 money.innerHTML = BASKET.price;
 const buy = (price, currency) => {
   if (price && currency) {
     quantity.innerHTML = Number(quantity.innerHTML) + 1;
+    quantityMob.innerHTML = Number(quantityMob.innerHTML) + 1;
     money.innerHTML =
       currency === CURRENCY
         ? Number(money.innerHTML) + price

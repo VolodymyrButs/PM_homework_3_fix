@@ -95,12 +95,24 @@
 }
 
 .btn_cart {
+  position: relative;
   padding: 12px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border: none;
   background: none;
+}
+.quantityMob {
+  position: absolute;
+  top: 0px;
+  left: 27px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ff5816;
+  padding: 1px 8px;
+  border-radius: 5px;
+  background: url(../img/header/bg.png);
 }
 
 .icons {
@@ -250,7 +262,9 @@
     font-stretch: semi-condensed;
     letter-spacing: 0.1rem;
   }
-
+  .quantityMob {
+    display: none;
+  }
   .logo_slogan {
     display: block;
     padding-top: 0.7rem;
