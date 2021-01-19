@@ -1,5 +1,3 @@
-# PM-homework-3
+# PM_homework_project_1
 
-Variant 2
-
-[Link](https://volodymyrbuts.github.io/PM-homework-3/) to our awesome homework!
+[Link](https://volodymyrbuts.github.io/PM_homework_project_1/)
