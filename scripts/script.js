@@ -13,18 +13,22 @@ const getPrice = (price, currency) => {
     ? price
     : Math.ceil(price * CURRENCY_EXCHANGE[currency], 1);
 };
-const buyHandler = (price, name) => {
-  let buyItemAlert = document.querySelector(".buyItemAlert");
-  quantity.innerHTML = Number(quantity.innerHTML) + 1;
-  quantityMob.innerHTML = Number(quantityMob.innerHTML) + 1;
-  money.innerHTML = Number(money.innerHTML) + price;
-  buyItemAlert.innerHTML = `<p>Товар ${name}, успешно добавлен в корзину</p>`;
-  buyItemAlert.style.display = "block";
+const buyHandler = (price, name, event) => {
+  if (price && !event.target.classList.contains("disable")) {
+    let buyItemAlert = document.querySelector(".buyItemAlert");
+    quantity.innerHTML = Number(quantity.innerHTML) + 1;
+    quantityMob.innerHTML = Number(quantityMob.innerHTML) + 1;
+    money.innerHTML = Number(money.innerHTML) + price;
+    event.target.classList.add("disable");
+    buyItemAlert.innerHTML = `<p>Товар ${name}, успешно добавлен в корзину</p>`;
+    buyItemAlert.style.display = "block";
 
-  setTimeout(() => {
-    buyItemAlert.style.display = "none";
-    buyItemAlert.innerHTML = "";
-  }, 2000);
+    setTimeout(() => {
+      buyItemAlert.style.display = "none";
+      buyItemAlert.innerHTML = "";
+      event.target.classList.remove("disable");
+    }, 2000);
+  }
 };
 
 // create items category arrays
@@ -71,7 +75,7 @@ const renderCard = (item) => {
           !item.price && "disable"
         }" onclick='buyHandler(${getPrice(item.price, item.currency)}, "${
     item.description
-  }")'>
+  }",event)'>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 495.4 495.4"
