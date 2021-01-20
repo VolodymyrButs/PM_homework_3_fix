@@ -102,7 +102,7 @@
   .bannerContainer > a {
     text-decoration: none;
   }
-  .bannerContainer > button:hover {
+  .bannerContainer button:hover {
     background-color: rgb(230, 230, 230);
   }
 
