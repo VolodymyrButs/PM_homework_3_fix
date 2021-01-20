@@ -1,0 +1,33 @@
+.buyItemAlert {
+  display: none;
+  position: fixed;
+  width: 300px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #ff743d;
+  border: 1px solid #ff743d;
+  top: 0;
+  left: 50%;
+  margin-left: -150px;
+  z-index: 1000;
+}
+.buyItemAlert:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #ff743d;
+  animation: 2s linear 0s line;
+}
+@keyframes line {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}

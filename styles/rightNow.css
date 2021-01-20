@@ -1,4 +1,4 @@
-.writeNowWrapper {
+.rightNowWrapper {
   display: none;
 }
 
@@ -22,7 +22,7 @@
   text-overflow: ellipsis;
 }
 @media screen and (min-width: 750px) {
-  .writeNowWrapper {
+  .rightNowWrapper {
     display: flex;
     height: 275px;
     justify-content: center;

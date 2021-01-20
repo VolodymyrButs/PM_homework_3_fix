@@ -41,7 +41,6 @@ if (typeof NEWS != "undefined") {
 
     const RandomList = createRand(3, 0, NEWS.length - 1);
 
-    const dataNews = document.createElement("div");
     var string = "";
     const newsWrapper = document.createElement("div");
     NEWS.length <= 3
@@ -85,7 +84,7 @@ if (typeof NEWS != "undefined") {
             </div>`;
           newsWrapper.appendChild(newsItem);
         });
-    writeNowWrapper.classList.add("writeNowWrapper");
+    rightNowWrapper.classList.add("rightNowWrapper");
     const newsBlock = document.getElementsByClassName("leftBanner")[0];
     newsBlock.innerHTML = `
         <p>Новости компании</p>

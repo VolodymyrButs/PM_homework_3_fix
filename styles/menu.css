@@ -28,10 +28,9 @@
   padding: 10px;
   height: 44px;
   width: 186px;
-
   flex-shrink: 0;
   cursor: pointer;
-  border-right: 1px solid #ff743d;
+  border-right: 2px solid #ff743d;
   justify-content: center;
   align-items: center;
 }

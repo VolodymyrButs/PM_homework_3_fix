@@ -33,13 +33,6 @@
   margin-right: 90px;
   flex-grow: 1;
 }
-.arrowNews {
-  display: none;
-  height: 50px;
-  width: 25px;
-  margin: auto 1px;
-  cursor: pointer;
-}
 .navArrow {
   height: 30px;
   width: 30px;
@@ -147,30 +140,18 @@
   display: flex;
   justify-content: center;
 }
-@media screen and (min-width: 415px) {
-  .goodWrapper {
-    width: 240px;
-  }
-}
 
-@media screen and (min-width: 1140px) {
-  .arrowNews {
-    display: block;
-  }
-  .goodsHeader > span {
-    display: none;
-  }
-  .navArrow {
-    display: none;
-  }
-  .goodsHeader a {
-    display: block;
-  }
-  .line {
-    margin-right: 10px;
-  }
+.goodWrapper {
+  width: 240px;
 }
-
+.splide__arrow.splide__arrow--prev:disabled > svg,
+.splide__arrow.splide__arrow--next:disabled > svg {
+  fill: #888;
+}
+.splide__arrow.splide__arrow--prev:disabled,
+.splide__arrow.splide__arrow--next:disabled {
+  cursor: default;
+}
 .splide__arrow.splide__arrow--prev,
 .splide__arrow.splide__arrow--next {
   top: -43px;
@@ -217,5 +198,17 @@
   .splide__arrow.splide__arrow--prev svg {
     fill: #ff5816;
     transform: rotate(180deg) scale(2, 3);
+  }
+  .goodsHeader > span {
+    display: none;
+  }
+  .navArrow {
+    display: none;
+  }
+  .goodsHeader a {
+    display: block;
+  }
+  .line {
+    margin-right: 10px;
   }
 }
